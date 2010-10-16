@@ -1,0 +1,23 @@
+<?php
+/**
+* ajax.lang
+* Lang definition file.
+* Contains the french translation for Connectix Boards.
+* Made by Jasienski Martin
+* ::Connectix Boards 2005::
+*/
+$merge = array (
+	/* Enregistrement */
+	'r_login_ok' => 'Nom d\'utilisateur valide et disponible.',
+	'r_password_ok' => 'Mot de passe valide.',
+	'r_mail_ok' => 'Adresse mail correcte (syntaxiquement).',
+	'r_captcha_ok' => 'Code aléatoire recopié correctement.',
+	
+	/* Edition rapide */
+	'form_confirm' => 'Confirmer',
+	'form_cancel' => 'Annuler',
+	'form_previs' => 'Prévisualisation'
+	);
+
+$this->lang = array_merge($this->lang,$merge);
+?>

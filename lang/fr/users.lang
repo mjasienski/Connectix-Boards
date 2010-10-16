@@ -1,0 +1,27 @@
+<?php
+/**
+* users.lang
+* Lang definition file.
+* Contains the french translation for Connectix Boards.
+* Made by Jasienski Martin
+* ::Connectix Boards 2005::
+*/
+$merge = array (
+	'users_search_title' => 'Sélectionner les critères de classement',
+	'users_search_crits' => 'Critères de recherche',
+	'users_allclasses' => 'Tous les groupes',
+	'users_title' => 'Liste des membres enregistrés du forum',
+	'users_sort' => 'Trier par',
+	'users_sort_reg' => 'Date d\'enregistrement',
+	'users_sort_class' => 'Groupe',
+	'users_sort_name' => 'Nom d\'utilisateur',
+	'users_sort_posts' => 'Nombre de messages',
+	'users_order' => 'Ordre',
+	'users_asc' => 'Croissant',
+	'users_desc' => 'Décroissant',
+	'users_reg' => 'Enregistré le',
+	'users_noone_todisplay' => 'Il n\'y a aucun membre qui correspond à vos critères de recherche'
+	);
+
+$this->lang = array_merge($this->lang,$merge);
+?>

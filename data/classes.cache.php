@@ -1,0 +1,6 @@
+<?php
+$GLOBALS['cb_classes'] = unserialize('a:4:{i:1;a:6:{s:5:"gr_id";s:1:"1";s:7:"gr_name";s:14:"Administrateur";s:8:"gr_color";s:3:"red";s:7:"gr_cond";s:2:"-1";s:7:"gr_hide";s:1:"0";s:9:"gr_status";s:1:"2";}i:7;a:6:{s:5:"gr_id";s:1:"7";s:7:"gr_name";s:10:"Mod?rateur";s:8:"gr_color";s:4:"blue";s:7:"gr_cond";s:2:"-1";s:7:"gr_hide";s:1:"0";s:9:"gr_status";s:1:"1";}i:19;a:6:{s:5:"gr_id";s:2:"19";s:7:"gr_name";s:4:"Test";s:8:"gr_color";s:5:"green";s:7:"gr_cond";s:2:"-1";s:7:"gr_hide";s:1:"0";s:9:"gr_status";s:1:"0";}i:3;a:6:{s:5:"gr_id";s:1:"3";s:7:"gr_name";s:7:"Membres";s:8:"gr_color";s:0:"";s:7:"gr_cond";s:1:"0";s:7:"gr_hide";s:1:"0";s:9:"gr_status";s:1:"0";}}');
+$GLOBALS['cb_legend'] = unserialize('s:307:"<a href="index.php?act=members&amp;su_class=1" style="color:red">Administrateur</a> - <a href="index.php?act=members&amp;su_class=7" style="color:blue">Mod?rateur</a> - <a href="index.php?act=members&amp;su_class=19" style="color:green">Test</a> - <a href="index.php?act=members&amp;su_class=3" >Membres</a>";');
+$GLOBALS['cb_ranks'] = unserialize('a:4:{i:0;s:18:"Nouvel Utilisateur";i:50;s:8:"Habitué";i:200;s:8:"Acharné";i:500;s:11:"Posteur fou";}');
+$GLOBALS['cb_guests_auth'] = unserialize('a:3:{s:3:"see";s:7:"/25//33";s:6:"create";s:9:"/33/27/34";s:5:"reply";s:6:"/33/34";}');
+?>

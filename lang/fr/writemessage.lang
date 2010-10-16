@@ -1,0 +1,35 @@
+<?php
+/**
+* search.lang
+* Lang definition file.
+* Contains the french translation for Connectix Boards.
+* Made by Jasienski Martin
+* ::Connectix Boards 2005::
+*/
+$merge = array (
+	'wm_editing' => 'Editer un message',
+	'wm_writing' => 'Répondre',
+	'wm_newtopic' => 'Créer un nouveau sujet',
+	'wm_newpoll' => 'Créer un nouveau sondage',
+	'wm_modoptions' => 'Options de modération',
+	'wm_mod_topicstatus' => 'Etat du sujet après écriture',
+	'wm_mod_edit' => 'Modifier l\'avis d\'édition de ce message par mon passage?',
+	'wm_normaltopic' => 'Normal',
+	'wm_lastmessages' => 'Derniers messages écrits [10 en commencant par le dernier]',
+	'wm_topic_infos' => 'Spécifiez les titre et commentaire de votre sujet',
+	'wm_topictitle' => 'Titre du sujet',
+	'wm_topiccomment' => 'Commentaire',
+	'wm_message' => 'Composez votre message',
+	'wm_poll_infos' => 'Insérez les caractéristiques de votre sondage',
+	'wm_pollquestion' => 'Question du sondage',
+	'wm_pollpossibilities' => 'Possibilités de réponse au sondage (une possibilité par ligne)',
+	'wm_submittopic' => 'Envoyer le nouveau sujet',
+	'wm_submitpoll' => 'Envoyer le nouveau sondage',
+	'wm_submitmodifpost' => 'Envoyer le message modifié',
+	'wm_redirect' => 'Rediriger, apres envoi du message',
+	'wm_to' => 'Vers',
+	'wm_currentmessage' => 'Vers le message courant'
+	);
+
+$this->lang = array_merge($this->lang,$merge);
+?>

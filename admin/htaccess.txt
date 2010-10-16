@@ -1,0 +1,124 @@
+#############################################################################
+# 	.htaccess for Url Rewriting in Connectix Boards							#
+# 																			#
+# 	Connectix Boards 0.8, free interactive php bulletin boards.				#
+#	Copyright (C) 2005-2007  Jasienski Martin.								#
+#																			#
+#	This program is free software; you can redistribute it and/or modify	#
+#	it under the terms of the GNU General Public License as published by	#
+#	the Free Software Foundation; either version 3 of the License, or		#
+#	(at your option) any later version.										#
+#																			#
+#	This program is distributed in the hope that it will be useful,			#
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of			#
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the			#
+#	GNU General Public License for more details.							#
+#																			#
+#	You can find a copy of the GNU General Public License at 				#
+#	<http://www.connectix-boards.org/license.txt>.							#
+# 																			#
+#############################################################################
+
+Options +FollowSymlinks
+RewriteEngine on
+
+# Url de base du forum
+RewriteRule ^forum\.html$ index.php [L]
+RewriteRule ^forum-mr\.html$ index.php?markread=1 [L]
+
+# Affichage d'un forum particulier
+RewriteRule ^forum-f([0-9]+),([a-zA-Z0-9-]+)\.html$ index.php?showforum=$1 [L]
+RewriteRule ^forum-f([0-9]+)\.html$ index.php?showforum=$1 [L]
+RewriteRule ^forum-f([0-9]+)-mr\.html$ index.php?showforum=$1&markread=1 [L]
+
+# Affichage d'un groupe de sujets
+RewriteRule ^forum-tg([0-9]+),([a-zA-Z0-9-]+)\.html$ index.php?showtopicgroup=$1 [QSA,L]
+RewriteRule ^forum-tg([0-9]+)-p([0-9]+),([a-zA-Z0-9-]+)\.html$ index.php?showtopicgroup=$1&page=$2 [QSA,L]
+RewriteRule ^forum-tg([0-9]+)\.html$ index.php?showtopicgroup=$1 [QSA,L]
+RewriteRule ^forum-tg([0-9]+)-mr\.html$ index.php?showtopicgroup=$1&markread=1 [L]
+
+# Affichage d'un sujet
+RewriteRule ^forum-t([0-9]+),([a-zA-Z0-9-]+)\.html$ index.php?showtopic=$1 [QSA,L]
+RewriteRule ^forum-t([0-9]+)\.html$ index.php?showtopic=$1 [QSA,L]
+RewriteRule ^forum-t([0-9]+)-firstunreadpost\.html$ index.php?showtopic=$1&gotofirstunreadpost=1 [QSA,L]
+RewriteRule ^forum-t([0-9]+)-p([0-9]+),([a-zA-Z0-9-]+)\.html$ index.php?showtopic=$1&page=$2 [QSA,L]
+RewriteRule ^forum-t([0-9]+)-p([0-9]+)\.html$ index.php?showtopic=$1&page=$2 [QSA,L]
+RewriteRule ^forum-t([0-9]+)-p([0-9]+)-editpoll\.html$ index.php?showtopic=$1&page=$2&editpoll=1 [L]
+RewriteRule ^forum-t([0-9]+)-m([0-9]+)\.html$ index.php?showtopic=$1&message=$2 [L]
+
+# Affichage d'une liste de sujets
+RewriteRule ^forum-tlist\.html$ index.php?act=tlist [QSA,L]
+
+# Ecriture des messages
+RewriteRule ^forum-wtopic-tg([0-9]+)\.html$ index.php?act=wm&newtopic=$1 [L]
+RewriteRule ^forum-wpoll-tg([0-9]+)\.html$ index.php?act=wm&newpoll=$1 [L]
+RewriteRule ^forum-wmsg-t([0-9]+)\.html$ index.php?act=wm&addreply=$1 [L]
+RewriteRule ^forum-wmsg-t([0-9]+)-quote([0-9]+)\.html$ index.php?act=wm&addreply=$1&quotemessage=$2 [L]
+RewriteRule ^forum-editmsg-m([0-9]+)-t([0-9]+)\.html$ index.php?act=wm&editmessage=$1&intopic=$2 [L]
+
+# Affichage du profil d'un membre
+RewriteRule ^forum-m([0-9]+),([a-zA-Z0-9-]+)\.html$ index.php?act=user&showprofile=$1 [L]
+
+# Edition du profil d'un membre
+RewriteRule ^forum-profile([0-9]+)\.html$ index.php?act=user&editprofile=$1 [L]
+RewriteRule ^forum-profile([0-9]+)-general\.html$ index.php?act=user&editprofile=$1&page=1 [QSA,L]
+RewriteRule ^forum-profile([0-9]+)-changemail\.html$ index.php?act=user&editprofile=$1&page=2 [QSA,L]
+RewriteRule ^forum-profile([0-9]+)-changepass\.html$ index.php?act=user&editprofile=$1&page=3 [QSA,L]
+RewriteRule ^forum-profile([0-9]+)-avatar\.html$ index.php?act=user&editprofile=$1&page=4 [QSA,L]
+RewriteRule ^forum-profile([0-9]+)-signature\.html$ index.php?act=user&editprofile=$1&page=5 [QSA,L]
+RewriteRule ^forum-profile([0-9]+)-params\.html$ index.php?act=user&editprofile=$1&page=6 [QSA,L]
+RewriteRule ^forum-profile([0-9]+)-topicstracked\.html$ index.php?act=user&editprofile=$1&page=7 [QSA,L]
+RewriteRule ^forum-profile([0-9]+)-bookmarks\.html$ index.php?act=user&editprofile=$1&page=8 [QSA,L]
+
+# Affichage des membres
+RewriteRule ^forum-members\.html$ index.php?act=members [QSA,L]
+RewriteRule ^forum-members-p([0-9]+)\.html$ index.php?act=members&page=$1 [QSA,L]
+
+# Affichage des personnes connectees
+RewriteRule ^forum-connected\.html$ index.php?act=cu [L]
+
+# Affichage du panneau de mp
+RewriteRule ^forum-mp\.html$ index.php?act=mp [L]
+RewriteRule ^forum-mp-inbox\.html$ index.php?act=mp&sub=1 [QSA,L]
+RewriteRule ^forum-mp-inbox-p([0-9]+)\.html$ index.php?act=mp&sub=1&page=$1 [QSA,L]
+RewriteRule ^forum-mp-outbox\.html$ index.php?act=mp&sub=2 [QSA,L]
+RewriteRule ^forum-mp-outbox-p([0-9]+)\.html$ index.php?act=mp&sub=2&page=$1 [QSA,L]
+RewriteRule ^forum-mp-write\.html$ index.php?act=mp&sub=3 [QSA,L]
+RewriteRule ^forum-mp-read\.html$ index.php?act=mp&sub=4 [QSA,L]
+
+# Recherche dans le forum
+RewriteRule ^forum-search\.html$ index.php?act=src [QSA,L]
+RewriteRule ^forum-search-p([0-9]+)\.html$ index.php?act=src&page=$1 [QSA,L]
+
+# Affichage des regles du forum
+RewriteRule ^forum-rules\.html$ index.php?act=rules [L]
+
+# Panneau de modération
+RewriteRule ^forum-moderators\.html$ index.php?act=mods [QSA,L]
+
+# Signaler un message
+RewriteRule ^forum-report\.html$ index.php?act=report [QSA,L]
+
+# Enregistrement
+RewriteRule ^forum-register\.html$ index.php?act=register [L]
+
+# Changement de mot de passe
+RewriteRule ^forum-changepass\.html$ index.php?act=cp [L]
+
+# Validation
+RewriteRule ^forum-validate\.html$ index.php?act=validate [QSA,L]
+
+# Connexion
+RewriteRule ^forum-login\.html$ index.php?act=login [L]
+
+# Déconnexion
+RewriteRule ^forum-logout\.html$ logout.php [L]
+
+# Ecriture des messages
+RewriteRule ^forum-writed\.html$ writed.php [L]
+
+# Image dynamique
+RewriteRule ^forum-image-([a-z0-9]+)\.html$ image.php?id=$1 [L]
+
+# Administration
+RewriteRule ^forum-admin\.html$ admin.php [QSA,L]

@@ -1,0 +1,44 @@
+<?php
+/**
+* userprofile.lang
+* Lang definition file.
+* Contains the french translation for Connectix Boards.
+* Made by Jasienski Martin
+* ::Connectix Boards 2005::
+*/
+$merge = array (
+	'mp_command' => 'Menu des messages personnels',
+	'mp_menu_recieved' => 'Messages reçus',
+	'mp_menu_sent' => 'Messages envoyés',
+	'mp_menu_write' => 'Nouveau message',
+	'mp_send_to' => 'Envoyer un message personnel',
+	'mp_title' => 'Messages personnels',
+	'mp_to_select' => 'Sélectionnez le destinataire du message',
+	'mp_to' => 'Destinataire',
+	'mp_to_sent' => 'Destinataire du message',
+	'mp_mess_write' => 'Rédigez votre message en spécifiant le titre de celui-ci',
+	'mp_subj' => 'Titre',
+	'mp_mess' => 'Message',
+	'mp_previs' => 'Prévisualiser le message',
+	'mp_previs_in' => 'Prévisualisation du message',
+	'mp_send' => 'Envoyer le message',
+	'mp_from' => 'Envoyé par',
+	'mp_reply' => 'Répondre',
+	'mp_forselection' => 'Pour la sélection',
+	'mp_invertselection' => 'Inverser la sélection',
+	'mp_alreadyread' => 'Ce message a été lu par son destinataire.',
+	'mp_notread' => 'Ce message n\'a pas été lu par son destinataire.',
+	'mp_date' => 'Heure de l\'envoi',
+	'mp_limitmessages' => 'Vous occupez {nbmp} message(s) sur {all} autorisés.',
+	'mp_delete' => 'Supprimer',
+	'mp_nomessagesfrom' => 'Aucun message dans votre boite d\'envoi.',
+	'mp_nomessagesto' => 'Aucun message dans votre boite de réception.',
+
+	/* Boutons */
+	'mp_r' => 'Lu',
+	'mp_u' => 'Non-lu',
+	'mp_del' => 'Supprimer'
+	);
+
+$this->lang = array_merge($this->lang,$merge);
+?>

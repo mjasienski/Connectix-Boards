@@ -1,0 +1,623 @@
+@import url(bbcode.css);
+
+@import url(bbsmiles.css);
+
+/********************* Forme générale de la page *********************/
+body {
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+
+#template {
+	background: white url(header-repeat.gif) repeat-x;
+	padding: 0 0 0 25px;
+	margin: 0;
+}
+
+#main {
+	padding: 0 25px 0 0;
+	margin: 0;
+}
+
+/********************* Formatage du texte *********************/
+/* Sur toute la page */
+body {
+	font-family: Verdana, "Century Gothic", Arial, serif;
+	font-size: 0.8em;
+	font-weight: normal;
+	color: #444444;
+}
+
+strong {
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* Forme de tous les liens */
+a img {
+	border: none;
+}
+
+a {
+	color: #222222;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Verdana, "Century Gothic", Arial, serif;
+}
+
+a:hover {
+	color: rgb(255, 136, 17);
+	text-decoration: underline;
+}
+
+table td a,table td a:hover,fieldset a,fieldset a:hover {
+	text-decoration: underline;
+}
+
+/********************* Formatage des éléments généraux du forum *********************/
+/** EN-TETE **/ 
+/* Titre du header */
+h1 #headerlink {
+	text-decoration: none;
+	font: bold 1.3em Georgia, "Trebuchet MS", Verdana, "Century Gothic",
+		Arial, serif;
+	color: white;
+	padding: 16px 0 0 10px;
+}
+
+/* Elément d'en-tête (div) */
+#header {
+	height: 100px;
+	text-indent: 130px;
+	margin: 0 0 10px 0;
+	background: url(header.gif) top left no-repeat;
+}
+
+/* Lien d'en-tête (mettre un logo ou une image ici) */
+#header a {
+	display: block;
+	line-height: 60px;
+	padding-left: 20px;
+	font-weight: normal;
+	font-family: "Trebuchet MS", "Century Gothic", Arial, serif;
+	color: white;
+	padding: 16px 0 0 20px;
+}
+
+/* Menu du dessus du forum (membres, règles, ...) */
+#headmenu {
+	height: 30px;
+	background: rgb(51, 102, 153) url(headmenu.gif) repeat-x;
+	margin: 5px auto 0 auto;
+	border: 1px solid rgb(51, 102, 153);
+}
+
+#headmenu ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#headmenu li {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	padding: 0 6px;
+	margin: 0;
+	border-right: 1px solid rgb(117, 149, 200);
+	font-family: "Century Gothic", "Trebuchet MS", Verdana, Arial, serif;
+}
+
+#headmenu li,#headmenu li a {
+	color: white;
+	font-size: 0.93em;
+	font-weight: bold;
+}
+
+/** PIED DE PAGE **/
+/* Elément général */
+#footer {
+	clear: both;
+	margin: 18px 0 0 0;
+	height: 25px;
+}
+
+/* Sous élément, comprenant les informations de copyright et d'exécution de la page */
+#copyright {
+	height: 25px;
+	line-height: 25px;
+	margin: 0;
+	text-align: center;
+}
+
+#copyright a {
+	font-weight: bold;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+	color: rgb(255, 136, 17);
+}
+
+/** BARRE D'ADRESSE (fil d'ariane) **/
+#addressbar {
+	border: 1px solid #555555;
+	background: #ffecce;
+	margin: 12px auto 10px auto;
+	padding: 0px;
+}
+
+#addressbar p {
+	padding: 5px;
+	margin: 0px;
+	font-weight: bold;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+	color: #333333;
+}
+
+#addressbar p a {
+	font-weight: bold;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+	color: rgb(255, 136, 17);
+}
+
+/** Menu du panneau d'administration **/
+#menu {
+	width: 20%;
+	float: left;
+	top: 0;
+	left: 0;
+	height: 95%;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 5px 15px 5px;
+}
+
+dl,dt,dd,ul,li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+dl#menu dt {
+	cursor: pointer;
+	margin: 2px 0px 0px 0px;
+	padding: 2px;
+	line-height: 20px;
+	text-align: center;
+	color: white;
+	border: 1px solid rgb(48, 99, 151);
+	background-color: rgb(48, 99, 151);
+}
+
+dl#menu dt a {
+	color: white;
+	width: 100%;
+}
+
+dl#menu dd {
+	border-bottom: 1px solid rgb(48, 99, 151);
+	border-left: 1px solid rgb(48, 99, 151);
+	border-right: 1px solid rgb(48, 99, 151);
+}
+
+dl#menu li {
+	text-align: center;
+	background: #fff;
+	padding: 2px;
+	border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+dl#menu li a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	border: 0 none;
+	height: 100%;
+	width: 100%;
+}
+
+dl#menu li:hover,dl#menu li a:hover {
+	background-color: rgb(169, 192, 228);
+	text-decoration: none;
+}
+
+dl#menu dt:hover,dl#menu dt a:hover {
+	background-color: rgb(117, 149, 200);
+	text-decoration: none;
+}
+
+/** Conteneur principal  **/
+#mainpanel {
+	width: 78%;
+	float: right;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Pour les formulaires de paneladmin. */
+.centerformtext {
+	margin: 5px auto;
+	padding: 6px;
+	width: 90%;
+	text-align: center;
+	background-color: rgb(117, 149, 200);
+}
+
+.centerforminput {
+	margin: 5px auto;
+	padding: 2px;
+	width: 98%;
+	text-align: center;
+}
+
+.sublink {
+	margin: 5px auto;
+	padding: 6px;
+	width: 50%;
+	text-align: center;
+	background-color: rgb(117, 149, 200);
+	color: white;
+	border: 1px solid rgb(48, 99, 151);
+	font-weight: bold;
+}
+
+.sublink a,.sublink a:hover {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Affichage des tableaux. */
+.table {
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	border: 1px solid rgb(48, 99, 151);
+}
+
+.titlerow {
+	background-color: rgb(48, 99, 151);
+	color: white;
+}
+
+tr {
+	background-color: rgb(199, 222, 238);
+}
+
+.contents {
+	width: 85%;
+}
+
+/* Paneladmin */
+.pa_pagemenu {
+	width: 95%;
+	margin: 3px auto;
+}
+
+.cfg_name {
+	width: 200px;
+}
+
+.cfg_explane {
+	
+}
+
+.cfg_param {
+	width: 220px;
+	text-align: center;
+}
+
+.cfg_param select {
+	width: 180px;
+}
+
+.cfg_cat {
+	text-align: center;
+	background-color: rgb(117, 149, 200);
+}
+
+.group_title {
+	width: 50%;
+}
+
+.group_options {
+	width: 30%;
+}
+
+.group_cond {
+	width: 10%;
+}
+
+.group_auth_title {
+	width: 55%;
+	text-align: left;
+}
+
+.group_auth_see {
+	width: 15%;
+}
+
+.group_auth_create {
+	width: 15%;
+}
+
+.group_auth_reply {
+	width: 15%;
+}
+
+.notcon_auth_title {
+	width: 75%;
+	text-align: left;
+}
+
+.notcon_auth_see {
+	width: 25%;
+}
+
+.modtable {
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modnum span {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.modgroup, .modgroup a {
+	font-weight: bold;
+	cursor: pointer;
+	background: rgb(169, 192, 228);
+}
+
+.modgroupch {
+	background: rgb(117, 149, 200);
+}
+
+.modusergr {
+	background: rgb(155, 180, 220);
+}
+
+.m_corr_id {
+	width: 40px;
+	text-align: center;
+}
+
+.m_corr_name {
+	text-align: left;
+}
+
+.str_table {
+	border: 1px solid rgb(48, 99, 151);
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.str_ttl {
+	background: rgb(48, 99, 151);
+	color: white;
+}
+
+.str_ttl .str_tgname {
+	text-align: center;
+}
+
+.str_f {
+	background: rgb(117, 149, 200);
+}
+
+.str_tg {
+	background: rgb(169, 192, 228);
+}
+
+.str_stg {
+	background: rgb(199, 222, 238);
+}
+
+.str_tgname {
+	text-align: left;
+}
+
+.str_tgop1 {
+	width: 180px;
+	text-align: center;
+}
+
+.str_tgop2 {
+	width: 75px;
+	text-align: left;
+}
+
+.indent {
+	display: block;
+	float: left;
+}
+
+.up,.down {
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin: auto 0;
+}
+
+.up {
+	background: url(arrow_up.png);
+}
+
+.down {
+	background: url(arrow_down.png);
+}
+
+.up span,.down span {
+	position: absolute;
+	left: 0;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.bb_options {
+	width: 300px;
+}
+
+.bb_sign {
+	width: 150px;
+}
+
+.sm_image {
+	width: 15;
+}
+
+.sm_name {
+	width: 15%;
+}
+
+.sm_file {
+	width: 35%;
+}
+
+.sm_options {
+	width: 35%;
+}
+
+.sm_optmenu {
+	text-align: right;
+	padding: 10px 30px;
+}
+
+#sm_massadd {
+	width:150px;
+	margin:0 auto;
+}
+
+.am_name {
+	width: 50%;
+}
+
+.am_options {
+	width: 50%;
+}
+
+.avatar {
+	float: left;
+	width: 170px;
+	height: 160px;
+	text-align: center;
+	padding: 5px;
+	margin: 10px;
+}
+
+.log_make {
+	width: 150px;
+}
+
+.log_time {
+	width: 150px;
+}
+
+.log_type {
+	
+}
+
+.log_concerns {
+	
+}
+
+.ban_ip {
+	width: 30%;
+}
+
+.ban_expires {
+	width: 30%;
+}
+
+.ban_options {
+	text-align: center;
+}
+
+.anz_ip {
+	width: 150px;
+}
+
+.anz_user {
+	width: 150px;
+}
+
+.anz_lastdate {
+	width: 150px;
+}
+
+.anz_count {
+	width: 150px;
+	text-align: center;
+}
+
+.anz_options {
+	
+}
+
+.mm_previs {
+	width: 90%;
+	text-align: left;
+	margin: 8px auto;
+	padding: 5px;
+	border: 1px solid rgb(139, 162, 178);
+}
+
+/* Menus d'insersion de bbcode et de smileys. */
+#bbcodeandsmilies {
+	margin: 5px auto 5px auto;
+}
+
+/*Affichage d'erreurs. */
+.warning {
+	width: 80%;
+	border: 1px solid rgb(30, 30, 30);
+	background: rgb(255, 176, 57);
+	margin: 10px auto 10px auto;
+	padding: 0px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.notice {
+	width: 80%;
+	border: 1px solid rgb(51, 102, 153);
+	background: rgb(239, 244, 250);
+	margin: 10px auto 10px auto;
+	padding: 0px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.warning p,.notice p {
+	padding: 5px;
+	margin: 0px;
+}
+
+/* Divers... */
+input {
+	vertical-align: middle;
+}
+
+blockquote {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+textarea {
+	overflow: auto;
+}
+
+#verifpseudoimage {
+	border: 1px solid black;
+	text-align: center;
+	padding: 5px;
+	margin-right: 15px;
+	background-color: rgb(154, 250, 236);
+}

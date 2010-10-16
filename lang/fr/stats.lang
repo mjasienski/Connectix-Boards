@@ -1,0 +1,71 @@
+<?php
+/**
+* stats.lang
+* Lang definition file.
+* Contains the french translation for Connectix Boards.
+* Made by Ishimaru Chiaki for Advanced Stats MOD
+* ::Connectix Boards 2005::
+*/
+$merge = array (
+	'stats' => 'Statistiques',
+    'st_founded' => 'Date d\'ouverture du forum',
+    'st_board_age' => 'Age du forum',
+    'st_total_topics' => 'Total des sujets',
+    'st_topicperday' => 'Sujets par jour',
+    'st_total_msgs' => 'Total des messages',
+    'st_msgperday' => 'Messages par jour',
+    'st_total_users' => 'Nombre d\'utilisateurs enregistrés',
+    'st_userperday' => 'Utilisateurs par jour',
+    'st_lastregdate' => 'Date du dernier enregistrement',
+    'st_lastreguser' => 'Dernier utilisateur enregistré',
+	'st_lastgentime' => 'Dernière génration des stats',
+	'st_nextgentime' => 'Prochaine génération des stats',
+	'st_gendelay' => 'Note : Par souci d\'économie de ressources du serveur, les statistiques sont mises à jour toutes les 6 heures.',
+	'st_active_topics' => 'Sujets les plus actifs',
+	'st_rank' => 'Rang',
+	'st_nbreply' => 'Réponses',
+	'st_topic' => 'Sujet',
+	'st_viewed_topics' => 'Sujets les plus vus',
+	'st_nbviews' => 'Vues',
+	'st_most_starters' => 'Utilisateurs commençant le plus de sujets',
+	'st_username' => 'Nom d\'utilisateur',
+	'st_topics' => 'Sujets',
+	'st_percent' => 'Pourcent',
+	'st_graph' => 'Graphique',
+	'st_sunday' => 'Dimanche',
+	'st_saturday' => 'Samedi',
+	'st_monday' => 'Lundi',
+	'st_weekly_posters' => 'Utilisateurs les plus actifs de la semaine',
+	'st_messages' => 'Messages',
+	'st_jan' => 'Janvier',
+	'st_feb' => 'Février',
+	'st_mar' => 'Mars',
+	'st_apr' => 'Avril',
+	'st_may' => 'Mai',
+	'st_jun' => 'Juin',
+	'st_jul' => 'Juillet',
+	'st_aug' => 'Août',
+	'st_sep' => 'Septembre',
+	'st_oct' => 'Octobre',
+	'st_nov' => 'Novembre',
+	'st_dec' => 'Décembre',
+	'st_monthly_posters' => 'Utilisateurs les plus actifs du mois',
+	'st_best_posters' => 'Meilleurs posteurs',
+	'st_month' => 'Mois',
+	'st_twelve_months_topics' => 'Nombre de sujets des 12 derniers mois',
+	'st_jan_short' => 'Jan',
+	'st_feb_short' => 'Fév',
+	'st_mar_short' => 'Mar',
+	'st_apr_short' => 'Avr',
+	'st_may_short' => 'Mai',
+	'st_jun_short' => 'Juin',
+	'st_jul_short' => 'Juil',
+	'st_aug_short' => 'Aoû',
+	'st_sep_short' => 'Sep',
+	'st_oct_short' => 'Oct',
+	'st_nov_short' => 'Nov',
+	'st_dec_short' => 'Déc'
+	);
+
+$this->lang = array_merge($this->lang,$merge);
+?>

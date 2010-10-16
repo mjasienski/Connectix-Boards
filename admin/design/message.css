@@ -1,0 +1,165 @@
+/**
+* Fichier CSS de Connectix Boards v0.8, pour erreurs et messages
+* 
+* Fichier sous license GNU-GPL
+* Auteur: Jasienski Martin
+*/
+body {
+	background: rgb(51, 102, 153);
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, "Century Gothic", Arial, serif;
+	font-size: 0.8em;
+	font-weight: normal;
+	color: #444444;
+}
+
+#template {
+	background: white;
+	width: 600px;
+	padding: 20px 0 0 0;
+	margin: 60px auto 0 auto;
+	border: 2px solid rgb(255, 136, 17);
+}
+
+#main {
+	background: white url(header-repeat.gif) repeat-x;
+	padding: 0 25px 0 25px;
+	margin: 0;
+}
+
+/* Forme de tous les liens */
+a {
+	color: rgb(255, 136, 17);
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Verdana, "Century Gothic", Arial, serif;
+}
+
+a:hover {
+	color: rgb(255, 136, 17);
+	text-decoration: underline;
+}
+
+/* Titre du header */
+h1 #headerlink {
+	text-decoration: none;
+	font: bold 1.3em Georgia, "Trebuchet MS", Verdana, "Century Gothic",
+		Arial, serif;
+	color: white;
+	padding: 16px 0 0 10px;
+}
+
+/* Titres de sections */
+h2 {
+	background: rgb(48, 99, 151) url(headmenu.gif) repeat-x;
+	padding: 0px;
+	text-align: left;
+	line-height: 32px;
+	margin: 0px;
+	font-weight: bold;
+	font-size: 1.15em;
+	color: white;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+}
+
+/* Puce devant les titres */
+.title_pre {
+	display: block;
+	float: left;
+	width: 26px;
+	height: 14px;
+	margin: 10px 8px 0px 0px;
+	padding: 0px;
+	background: url(plug.gif) no-repeat left;
+}
+
+.title_pre span {
+	position: absolute;
+	left: 0;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+/* Elément d'en-tête (div) */
+#header {
+	height: 100px;
+	text-indent: 130px;
+	margin: 0 0 20px 0;
+	background: url(header.gif) top left no-repeat;
+}
+
+/* Lien d'en-tête (mettre un logo ou une image ici) */
+a#headerlink {
+	display: block;
+	line-height: 60px;
+	padding-left: 20px;
+	font-weight: normal;
+	font-family: "Trebuchet MS", "Century Gothic", Arial, serif;
+}
+
+/** PIED DE PAGE **/ /* Element général */
+#footer {
+	clear: both;
+	margin: 18px 0 20px 0;
+	height: 25px;
+}
+
+/* Sous élément, comprenant les informations de copyright et d'exécution de la page */
+#copyright {
+	height: 25px;
+	line-height: 25px;
+	margin: 0;
+	text-align: center;
+}
+
+#copyright a {
+	font-weight: bold;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+	color: rgb(255, 136, 17);
+}
+
+/** BLOC CONTENEUR **/
+.container {
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+	background: rgb(239, 244, 250);
+	border: 1px solid rgb(51, 102, 153);
+}
+
+.inforow,.inforow_links {
+	background: rgb(239, 244, 250);
+	margin: 0px;
+	padding: 5px;
+	border-bottom: 1px solid rgb(51, 102, 153);
+}
+
+.inforow_links {
+	text-align: center;
+}
+
+/* Bloc de code */
+.code {
+	display: block;
+	border-left: 4px solid rgb(117, 149, 200);
+	background-color: rgb(230, 230, 230);
+	margin: 10px 15px;
+	padding: 2px;
+	font-family: courier;
+	overflow: auto;
+}
+
+.citation {
+	margin: 10px 15px;
+	border: 1px dotted rgb(48, 99, 151);
+	border-left: 4px solid rgb(255, 136, 17);
+	background: rgb(250, 252, 254);
+	padding: 2px;
+}
+
+/* Italique */
+.i {
+	font-style: italic;
+}

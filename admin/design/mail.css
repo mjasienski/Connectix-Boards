@@ -1,0 +1,15 @@
+@import url(bbcode.css);
+
+/* Fichier CSS pour les mails de Connectix Boards. */
+body {
+	background: white;
+	font: normal 0.8em black "Trebuchet MS", Verdana, "Century Gothic",
+		Arial, serif;
+	margin: 10px;
+	border: 1px solid #C2CFDF;
+	padding: 10px;
+}
+
+#mailcontent {
+	background-color: #EEEEEE;
+}

@@ -1,0 +1,13 @@
+/**
+* Fichier CSS de Connectix Boards v0.7
+* Version étroite de la skin de base
+* 
+* Fichier sous license GNU-GPL
+* Auteur: Jasienski Martin
+*/ /* Import de la css de tout le reste de la skin */
+@import url(style.css);
+
+/* Modifications par rapport à la skin de base */
+body {
+	font-size: 1em;
+}

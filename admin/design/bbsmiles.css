@@ -1,0 +1,147 @@
+/**
+* Formatage du menu d'insersion de BBCode et de smilies de Connectix Boards pour Zephyr.
+*/ 
+
+/** Ecriture de messages **/
+.wmessage {
+	width: 500px;
+	height: 300px;
+}
+
+/* Menu avec les smileys et boutons de formatage du texte */
+.bbcodeandsmilies {
+	display: block;
+	width: 500px;
+	border: 1px solid rgb(100, 100, 100);
+	margin: 5px auto 5px auto;
+	padding: 0;
+	background-color: rgb(234, 234, 234);
+	text-align: center;
+}
+
+.bbcode_input,.bbcode_select {
+	display: block;
+	height: 2em;
+	margin: 3px;
+	padding: 0;
+}
+
+.bbcode_input input {
+	border: 1px solid #888888;
+	padding: 1px;
+	margin: 0;
+}
+
+.smilies {
+	display: block;
+	width: 450px;
+	margin: 10px auto 6px auto;
+	padding: 0;
+}
+
+.smilies img {
+	margin: 0px 4px 3px 4px;
+}
+
+.colorchooser {
+	width: 80px;
+	height: 1.6em;
+}
+
+.colortitle {
+	color: black;
+	font-weight: bold;
+}
+
+.coloritem {
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+.sizechooser {
+	width: 80px;
+	height: 1.6em;
+}
+
+.sizetitle {
+	color: black;
+	font-weight: bold;
+}
+
+.sizeitem {
+	width: 80px;
+}
+
+.fontchooser {
+	width: 80px;
+	height: 1.6em;
+}
+
+.fonttitle {
+	color: black;
+	font-weight: bold;
+}
+
+.fontitem {
+	width: 80px;
+}
+
+/** PROMPT JAVASCRIPT AMELIORE **/
+#cbprompt,#cbalert {
+	display: block;
+	position: absolute;
+	top: 400px;
+	left: 50%;
+	width: 450px;
+	margin-left: -225px;
+	background: rgb(117, 149, 200) url(headmenu.gif) repeat-x;
+	border: 1px solid rgb(51, 102, 153);
+}
+
+html>body #cbprompt,html>body #cbalert {
+	position: fixed;
+	top: 42%;
+}
+
+#cbprompt p,#cbalert p {
+	margin: 6px;
+	padding: 0;
+}
+
+/* Message d'avertissement */
+#prompt_message,#alert_message {
+	margin: 10px;
+	font-weight: bold;
+	color: white;
+}
+
+/* Formulaire (uniquement pour le prompt), un simple input de type text */
+#prompt_form {
+	text-align: center;
+}
+
+#prompt_value {
+	border: 1px solid rgb(51, 102, 153);
+	width: 350px;
+}
+
+/* Boutons de confirmation ou annulation */
+#prompt_submit  , #alert_submit {
+	text-align: center;
+}
+
+#prompt_submit input  , #alert_submit input {
+	padding: 1px 12px;
+}
+
+#prompt_ok {
+	border: 1px solid rgb(51, 102, 153);
+}
+
+#prompt_cancel {
+	border: 1px solid rgb(51, 102, 153);
+	margin-left: 15px;
+}

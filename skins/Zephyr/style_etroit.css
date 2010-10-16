@@ -1,0 +1,47 @@
+/**
+* Fichier CSS de Connectix Boards v0.7
+* Version �troite de la skin de base
+* 
+* Fichier sous license GNU-GPL
+* Auteur: Jasienski Martin
+*/ /* Import de la css de tout le reste de la skin */
+@import url(style.css);
+
+/* Modifications par rapport � la skin de base */
+body {
+	background: rgb(51, 102, 153);
+	padding: 0;
+	margin: 0;
+}
+
+#template {
+	width: 880px;
+	margin: 0 auto;
+	padding: 0;
+	background: url(body.jpg) repeat-y;
+}
+
+#main {
+	background: url(body-b.jpg) bottom no-repeat;
+	padding: 0 25px 15px 25px;
+	margin: 0;
+}
+
+h1 #headerlink {
+	background: url(img_skin/header.gif) no-repeat;
+	text-decoration: none;
+	font: normal 1.2em "Trebuchet MS", Verdana, "Century Gothic", Arial,
+		serif;
+	/* color:rgb(45,95,145); */
+	color: white;
+	height: 100%;
+	margin: 0 0 0 15px;
+	padding: 25px 0 0 0;
+}
+
+#header {
+	height: 100px;
+	text-indent: 150px;
+	margin: 0 -11px 10px -11px;
+	background: url(img_skin/header-repeat.gif) repeat-x;
+}

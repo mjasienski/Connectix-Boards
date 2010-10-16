@@ -1,0 +1,2008 @@
+/**
+* CSS file of Connectix Boards v1.0
+* Roma skin
+* style.css
+* 
+* Under GNU-GPL v3 license
+* Author: Jasienski Martin
+*/ 
+
+/* BBCode formatting */
+@import url(bbcode.css);
+
+/* Keyboard navigation */
+@import url(kbd_navigation.css);
+
+/********************* General shape of the page *********************/
+* {margin: 0; padding: 0;}
+
+body {
+	background: url(img_skin/bg.gif);	
+}
+
+#template {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#contents {
+	background: white;
+	padding: 10px 15px;
+}
+
+/********************* Text formatting *********************/
+/* Sur toute la page */
+body {
+	font-family: Verdana, "Century Gothic", Arial, serif;
+	font-size: 0.8em;
+	color: #444444;
+}
+
+strong {
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* Forme de tous les liens */
+a img {
+	border: none;
+}
+
+a {
+	color: #222222;
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: normal;
+	font-family: Verdana, "Century Gothic", Arial, serif;
+}
+
+a:hover {
+	color: rgb(255, 136, 17);
+	text-decoration: underline;
+}
+
+.message a {
+	text-decoration: underline;
+}
+
+/********************* Formatage des titres *********************/
+/* Titre du header */
+h1 #headerlink {
+	text-decoration: none;
+	font: normal Verdana, "Century Gothic", Arial, serif;
+	line-height:92px;
+	font-size:25px;
+	color:#666666;
+}
+
+/* Titres de sections */
+h2 {
+	text-align: left;
+	height: 25px;
+	line-height: 25px;
+	font-weight: bold;
+	font-size: 1.05em;
+	color: #666666;
+	border-bottom: 3px solid #666666;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+}
+
+/* Titres des menus */
+h3 {
+	display:none;
+}
+
+/* Puce devant les titres */
+.title_pre {
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin: 4px 6px 0 5px;
+	background: url(img_skin/asterisk_orange.png) no-repeat left;
+	cursor: pointer;
+}
+
+.title_pre span {
+	position: absolute;
+	left: 0;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+/********************* Formatage des éléments généraux du forum *********************/
+/** Skiplinks **/
+#skiplinks {
+	position: absolute;
+	left: 0;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+/** EN-TETE **/ 
+/* Elément d'en-tête (div) */
+#header {
+	padding: 0 10px;
+	height: 108px;
+	background: white url(img_skin/header.gif) 4px 4px no-repeat;
+	text-indent: 130px;
+}
+
+/* Menu du dessus du forum (membres, règles, ...) */
+#headmenu {
+	height: 30px;
+}
+
+#headmenu ul {
+	list-style-type: none;
+}
+
+#headmenu li {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	padding: 0 6px;
+	font-family: "Century Gothic", "Trebuchet MS", Verdana, Arial, serif;
+}
+
+#headmenu li a {
+	color: white;
+	font-size: 0.865em;
+	font-weight: bold;
+}
+
+li#hm_admin, li#hm_mods {
+	float:right;
+}
+
+#headmenu #fast_connect {
+	float: right;
+}
+
+/* Menu du dessus du forum relatif à l'utilisateur (données personnelles, mp, connexion,...) */
+#connectpanel {
+	clear: both;
+	margin: 0 auto 0 auto;
+	height: 30px;
+	line-height: 30px;
+	background: white;
+	border-bottom: 1px solid rgb(220, 220, 220);
+	text-align: center;
+	font-size: 0.93em;
+	font-family: "Century Gothic", "Trebuchet MS", Verdana, Arial, serif;
+}
+
+#connectlist {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	display:inline;
+	list-style:none;
+}
+
+#lang_choice {
+	height: 30px;
+	line-height: 30px;
+	display:block;
+	list-style:none;
+	float:right;
+	position:relative;
+	margin: 0 3px 0 0;
+	text-align:right;
+}
+
+#connectlist li, #lang_choice li {
+	display:inline;
+}
+
+.con_lang_link {
+	display: block;
+	width: 16px;
+	height: 11px;
+	float:left;
+	margin: 9px 0 0 6px;
+}
+
+.con_lang_link span {
+	position: absolute;
+	left: 0;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+#con_ulink, #con_welcome, #con_login, #con_logout, #con_register, #con_mp, #con_profile {
+	padding: 0 8px;
+}
+
+#con_logout, #con_register, #con_mp, #con_profile {
+	border-left:1px solid rgb(180,180,180);
+}
+
+#connectlist a {
+	font-size: 0.93em;
+	font-weight: bold;
+}
+
+#connectlist a:hover {
+	text-decoration: none;
+}
+
+/** Raccourcis **/
+#shortcuts ul {
+	clear:both;
+	display:block;
+	height:18px;
+	list-style: none;
+	padding: 2px 365px;
+	background: white;
+}
+
+#shortcuts li {
+	display: block;
+	width:16px;
+	height:16px;
+	float:left;
+	margin: 0 4px;
+	border-top: none;
+}
+
+#shortcuts li a {
+	display:block;
+	width:16px;
+	height:16px;
+}
+
+#sc_lm a {
+	background:url(img_icons/st_r.png) no-repeat;
+}
+
+#sc_lm_p a {
+	background:url(img_icons/st_r_p.png) no-repeat;
+}
+
+#sc_nr a {
+	background:url(img_icons/msg_read.png) no-repeat;
+}
+
+#sc_ur a {
+	background:url(img_icons/st_u.png) no-repeat;
+}
+
+#sc_ur_p a {
+	background:url(img_icons/st_u_p.png) no-repeat;
+}
+
+#sc_bm a {
+	background:url(img_icons/st_bookmark.png) no-repeat;
+}
+
+#sc_tt a {
+	background:url(img_icons/mail.png) no-repeat;
+}
+
+#shortcuts li a span {
+	position: absolute;
+	left: 0;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+/** PIED DE PAGE **/ /* Element général */
+#footer {
+	clear: both;
+	margin: 7px 0;
+	color:white;
+}
+
+/* Sous élément, comprenant les informations de copyright et d'exécution de la page */
+#copyright {
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+#copyright a {
+	font-weight: bold;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+	color: rgb(255, 136, 17);
+}
+
+/** BLOC CONTENEUR **/
+/* Contient presque tous les contenus qui ne sont pas dans des tableaux:
+formulaires, règles, ...*/
+.container {
+	clear: both;
+	margin: 5px 0 5px 0;
+	border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+/** TABLEAUX **/
+/* Servent pour toutes les données tabulaires */
+.table {
+	clear: both;
+	margin: 16px 0;
+}
+
+table {
+	background: #FFFFFF;
+	width: 100%;
+	border-collapse: collapse;
+	border: none;
+	table-layout:fixed;
+}
+
+/* Titre du tableau */
+table caption {
+	text-align: left;
+	width: 100%;
+	line-height: 25px;
+	border-bottom: 3px solid #666666;
+}
+
+table caption,table caption a {
+	font-size: 1.08em;
+	color: #666666;
+	font-weight: bold;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+}
+
+table caption a:hover {
+	color: #666666;
+}
+
+/* Titres des colonnes */
+table th {
+	text-align: left;
+	padding: 4px;
+	background: #A1B4CD;
+	font-weight: normal;
+	font-size: 0.85em;
+	color: white;
+	border: none;
+}
+
+/* Cellules */
+table td {
+	padding: 4px;
+	border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+/* Elements du pied du tableau */
+table tfoot th {
+	display: none;
+}
+
+
+/** Champs internes à certains éléments de tableau **/
+/* Titre (nom d'un forum, d'un topic) */
+.row_title,.row_title a {
+	font-weight: bold;
+	font-size: 0.95em;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+	color: rgb(255, 136, 17);
+}
+
+/* Commentaire (d'un forum, topic, ...) */
+.row_comment {
+	font-size: 0.85em;
+}
+
+/* Sous-groupes de sujets d'un groupe de sujets */
+.row_subtgs {
+	font-size: 0.85em;
+}
+
+.row_subtgs strong {
+	font-weight: normal;
+}
+
+/** CHAMPS D'INFORMATION  **/
+/* Champs informatifs d'en-tête et de pied de page statiques */
+.foruminfo {
+	clear: both;
+	margin: 10px 0;
+	background: rgb(235, 235, 235);
+}
+
+.foruminfo p {
+	padding: 5px;
+}
+
+/* Champs informatifs d'en-tête et de pied de page dynamiques */
+.foruminfo_dyn {
+	margin: 10px 0;
+}
+
+/* Informations importantes d'en-tête (forum en pause,...) */
+.biginfo {
+	background: rgb(255, 153, 0);
+	font-weight: bold;
+	margin: 10px auto 10px auto;
+	text-align: center;
+}
+
+.biginfo p {
+	padding: 5px;
+}
+
+/** REDIRECTION RAPIDE DANS LES FORUMS **/
+#general_options {
+	margin: 25px 0 20px 0;
+}
+
+#skin_select {
+	text-align: right;
+	float:right;
+	margin: 0 10px 0 0;
+	padding: 5px;
+	font-size: 0.85em;
+	height:40px;
+}
+
+#quick_redirection {
+	float:right;
+	height:40px;
+	text-align: right;
+	padding: 5px;
+	font-size: 0.85em;
+}
+
+#stats, #foruminfo, #foruminfo_dyn {
+	clear:both;
+}
+
+/** AVERTISSEMENT DE RECEPTION DE MP **/
+/* Ne sera affiché que si le javascript est désactivé */
+#mpadv {
+	border: 1px solid rgb(30, 30, 30);
+	background: rgb(255, 176, 57);
+	margin: 10px auto 10px auto;
+	text-align: center;
+	font-weight: bold;
+}
+
+#mpadv p {
+	padding: 5px;
+}
+
+/** MENU D'OPTIONS DE MODERATION **/
+/* Ces menus sont disponibles sur l'affichage des sujets */
+#modmenu {
+	margin: 15px 0 4px 0;
+}
+
+#modmenu_msgs {
+	margin:10px 0 8px 0;
+}
+
+.moditem {
+	background-color: rgb(215, 215, 215);
+	padding: 5px;
+	margin: 0 auto 1px auto;
+}
+
+/** BARRE D'ADRESSE (fil d'ariane) **/
+.addressbar {
+	border-bottom: 2px solid #666666;
+	background: url(img_icons/addressbar.png) 4px 4px no-repeat;
+	margin: 12px auto 10px auto;
+	padding: 0 0 0 20px;
+}
+
+.addressbar p {
+	padding: 5px;
+	font-weight: bold;
+	font-size: 0.9em;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+	color: #666666;
+}
+
+.addressbar p a {
+	font-weight: bold;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+	color: rgb(255, 136, 17);
+}
+
+/** REQUETES EFFECTUEES (en mode debug)  **/
+.debug_time {
+	width: 130px;
+	text-align: center;
+}
+
+.debug_query pre {
+	overflow: auto;
+	width: 650px;
+	margin: 6px;
+	padding: 15px 4px;
+	background: rgb(240, 240, 240);
+	border: 1px solid rgb(180, 180, 180);
+}
+
+/** STATISTIQUES **/
+/* En bas du forum, avec les connectés, la légende et les statistiques. */
+#stats {
+	margin: 10px 0 0 0;
+}
+
+.inforow {
+	padding: 5px;
+	border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+/** NOTICES ET WARNINGS **/
+.warning {
+	background: rgb(255, 176, 57);
+	margin: 18px auto;
+	text-align: center;
+	font-weight: bold;
+}
+
+.notice {
+	background: #A1B4CD;
+	margin: 18px auto;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+
+.warning p,.notice p {
+	padding: 5px;
+}
+
+/** MENUS **/
+/* Disponibles dans les MP, données personnelles, modération, ... */
+.menu ul {
+	list-style: none;
+	text-align: center;
+	margin: 8px 0 18px 0;
+}
+
+.menu li {
+	display:inline;
+	padding: 0 8px;
+	margin: 0 3px;
+}
+
+.menuitem {
+	border-bottom:2px solid #666666;
+}
+
+.menuitem, .menuitem a {
+	font-weight:bold;
+	color: #666666;
+}
+
+.menuitem:hover {
+	border-bottom:2px solid rgb(255, 136, 17);
+}
+
+.menuitem a:hover {
+	text-decoration:none;
+	color:rgb(255, 136, 17);
+}
+
+.menuitem_selected, .menuitem_selected:hover {
+	border-bottom:2px solid #CCCCCC;
+	color: #CCCCCC;
+}
+
+/** MENUS DE PAGES ET D'OPTIONS **/
+/* Au dessus et en dessous des tableaux en nécéssitant */
+.bigmenu {
+	height: 30px;
+	margin: 5px 0 5px 0;
+	line-height:2em;
+}
+
+.pagemenu, .mp_menu_pages {
+	float: left;
+	padding: 1px 0 1px 10px;
+	line-height:1.4em;
+	font-size: 90%;
+}
+
+.firstpage, .somepage, .lastpage {
+	padding: 1px 2px;
+}
+
+.currentpage {
+	background: rgb(227, 227, 227);
+	padding: 1px 3px;
+	border:1px solid rgb(153, 153, 153);
+}
+
+.pageseparator {
+	display:none;
+}
+
+.pagemenu a, .mp_menu_pages a {
+	font-weight: bold;
+}
+
+.bb_markread span,a.tt_bookmark,a.tt_nobookmark,a.tt_track,a.tt_notrack,a.sc_newmessages,a.sc_lastmessages,a.sc_noreply,a.sc_bookmarks,a.sc_tracked {
+	font-weight: normal;
+}
+
+.optionmenu {
+	list-style-type: none;
+	padding: 5px 0 0 0;
+	text-align: right;
+	margin: 0 3px 0 0;
+}
+
+.optionmenu li {
+	display: inline;
+	vertical-align:middle;
+}
+
+/** FORMULAIRES **/ 
+/* Sous-formulaire */
+fieldset {
+	position: relative;
+	margin: 12px 14px 12px 14px;
+	padding: 16px 20px 10px 20px;
+	border: 1px solid #AAAAAA;
+}
+
+fieldset legend {
+	padding: 1px 4px 1px 4px;
+	color: #666666;
+	font-weight: normal;
+	/* position: absolute;
+	top: -7px; */
+	background: white;
+}
+
+fieldset p {
+	margin: 5px 0 10px 0;
+}
+
+/* Fix pour les fieldsets dans IE */
+.clearfix { 
+	height: 1px; 
+}
+
+/* div comprenant le bouton de confirmation*/
+.confirm {
+	text-align: center;
+	margin: 5px;
+}
+
+/* Eléments de formulaires */
+input {
+	
+}
+
+select, textarea {
+	border: 1px solid rgb(100, 100, 100);
+	padding: 1px;
+	background: rgb(247, 250, 253);
+}
+
+input, select, textarea {
+	font-family: Verdana, "Century Gothic", Arial, serif;
+}
+
+textarea {
+	overflow: auto;
+	font-size: 0.9em;
+}
+
+/********************* Formatage des sections particulières du forum *********************/
+/** Forums **/
+.topicgroupicon {
+	width: 50px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.topicgrouptopics {
+	width: 60px;
+	text-align: center;
+}
+
+.topicgroupposts {
+	width: 70px;
+	text-align: center;
+}
+
+tbody .topicgrouptopics,tbody .topicgroupposts {
+	background-color: #CBD6E5;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+}
+
+.topicgrouplastmessage {
+	width: 220px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+tbody .topicgrouplastmessage {
+	font-size: 0.8em;
+}
+
+/** Topicgroups **/
+.modtitle {
+	margin: 3px;
+}
+
+.topicicon {
+	width: 25px;
+	text-align: center;
+}
+
+.statusicon {
+	width: 25px;
+	text-align: center;
+}
+
+.topicstarter {
+	width: 150px;
+	text-align: center;
+}
+
+.topicposts {
+	width: 60px;
+	text-align: center;
+	padding: 0 0 0 5px;
+}
+
+.topicviews {
+	width: 50px;
+	text-align: center;
+}
+
+.topiclastmessage {
+	width: 130px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+td.topicstarter {
+	background-color: rgb(227, 237, 243);
+}
+
+td.topicposts,td.topicviews {
+	background-color: #CBD6E5;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+}
+
+td.topiclastmessage {
+	font-size: 0.8em;
+}
+
+td .pagenum {
+	background: rgb(117, 149, 200);
+	border: 1px solid rgb(51, 102, 153);
+	padding: 0 0.2em;
+	margin: 0 0.2em;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 0.8em;
+	color: white;
+}
+
+#tlist_selectcrits,#tlist_form legend span {
+	cursor: pointer;
+}
+
+/** Topics **/ 
+/* Cellule avec le nom de l'utilisateur */
+.messageuser {
+	background: #A1B4CD;
+	width: 200px;
+	vertical-align: top;
+	text-align: center;
+}
+
+.messageuser a,.messageuser .guest_name {
+	font-size: 1.1em;
+	font-weight: bold;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+	color: white;
+}
+
+/* Cellule contenant les infos du message (heure d'écriture et options) */
+.messageheader {
+	background: #A1B4CD;
+	vertical-align: top;
+}
+
+.messageheader,.messageheader a {
+	color: white;
+}
+
+.messheaddate {
+	display: block;
+	float: left;
+	margin-left: 12px;
+}
+
+.messheadread {
+	background: url(img_icons/msg_read.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	float: left;
+	margin: 0 0 0 4px;
+}
+
+.messheadunread {
+	background: url(img_icons/msg_unread.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	float: left;
+	margin: 0 0 0 4px;
+}
+
+.messmoderation {
+	display:block;
+	float:left;
+	padding:3px 8px 0 2px;
+}
+
+.messheadlocalid {
+	display: block;
+	float: left;
+}
+
+.messheadoptions {
+	list-style-type: none;
+	text-align: right;
+}
+
+.messheadoptions li {
+	float: right;
+}
+
+/* Cellule avec les infos sur l'utilisateur */
+.messageuser2 {
+	background-color: #CBD6E5;
+	width: 200px;
+	text-align: center;
+	vertical-align: top;
+	font-size: 95%;
+}
+
+.avatar {
+	width: 200px;
+	overflow: hidden;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+.avatar img {
+	display: block;
+	margin: 3px auto;
+	border: 3px solid white;
+	background: #ffffff;
+}
+
+.t_reputation {
+	width: 125px;
+	margin: 4px auto;
+}
+
+.communication {
+	margin: 10px auto 5px auto;
+}
+
+.punish {
+	text-align: left;
+}
+
+.mod_editpr {
+	display: block;
+	margin: 0 0 0 20px;
+	float: left;
+	width:16px;
+	height:16px;
+	background:url(img_icons/usr_edit.png) 0 0 no-repeat;
+}
+.mod_editpr span {
+	position: absolute;
+	left: 0;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+	
+/* Cellule avec le message */
+.message {
+	padding-left: 10px;
+	vertical-align: top;
+}
+
+.message p {
+	padding: 3px;
+}
+
+.message img {
+   max-width:580px;
+}
+
+.messagecontent a {
+	text-decoration: underline;
+}
+
+.messageedit {
+	margin-top: 15px;
+	font-size: 95%;
+	font-weight: bold;
+}
+
+.messagesignature {
+	border-top: 1px solid rgb(160, 160, 160);
+	margin-top: 8px;
+	padding-top: 3px;
+	height: 100px;
+	width: 600px;
+	overflow: hidden;
+	font-size: 95%;
+}
+
+/* Présentation du sondage */
+.pollpossibility {
+	width: 100%;
+}
+
+.pollleft {
+	width: 50%;
+	text-align: right;
+	padding: 10px;
+}
+
+.pollright {
+	width: 50%;
+	text-align: left;
+	padding: 10px;
+}
+
+.pollbar {
+	float: left;
+	border: 1px solid black;
+	background: rgb(176, 190, 191);
+	height: 1em;
+}
+
+/* Ligne de séparation */
+hr {
+	border: 1px solid rgb(210, 210, 210);
+}
+
+/* Réponse rapide */
+#flashreply {
+	margin-top: 18px;
+}
+
+/* Edition rapide */
+.form_buttons {
+	width: 500px;
+	text-align: center;
+}
+
+.form_buttons input {
+	margin: 2px 10px;
+}
+
+/** Ecriture de messages **/
+.wmessage {
+	width: 500px;
+	height: 300px;
+}
+
+#poll {
+	width: 500px;
+	height: 200px;
+}
+
+#note {
+	width: 400px;
+	height: 100px;
+}
+
+/* Menu avec les smileys et boutons de formatage du texte */
+.bbcodeandsmilies {
+	display: block;
+	width: 500px;
+	border: 1px solid rgb(100, 100, 100);
+	margin: 5px 0 5px 0;
+	background-color: rgb(234, 234, 234);
+	text-align: center;
+}
+
+.bbcode_input,.bbcode_select {
+	display: block;
+	height: 2em;
+	width:490px;
+	margin: 3px auto;
+	text-align:center;
+}
+
+.bbcode_input input {
+	border: none;
+	margin: 0 1px;
+	width: 16px;
+	height: 16px;
+	line-height: 0px;
+	font-size: 0px;
+	overflow: hidden;
+}
+
+input.bbcode_bold {
+	background: url(img_bbcode/bold.png) no-repeat;
+}
+
+input.bbcode_italic {
+	background: url(img_bbcode/italic.png) no-repeat;
+	text-indent:10000px;
+}
+
+input.bbcode_underlined {
+	background: url(img_bbcode/underline.png) no-repeat;
+	text-indent:10000px;
+}
+
+input.bbcode_striked {
+	background: url(img_bbcode/strike.png) no-repeat;
+	text-indent:10000px;
+	width: 30px;
+}
+
+input.bbcode_quote {
+	background: url(img_bbcode/quote.png) no-repeat;
+	text-indent:10000px;
+}
+
+input.bbcode_code {
+	background: url(img_bbcode/code.png) no-repeat;
+	text-indent:10000px;
+}
+
+input.bbcode_img {
+	background: url(img_bbcode/image.png) no-repeat;
+	text-indent:10000px;
+}
+
+input.bbcode_url {
+	background: url(img_bbcode/url.png) no-repeat;
+	text-indent:10000px;
+}
+
+input.bbcode_mail {
+	background: url(img_bbcode/email.png) no-repeat;
+	text-indent:10000px;
+	width: 30px;
+}
+
+input.bbcode_spoil {
+	background: url(img_bbcode/spoil.png) no-repeat;
+	text-indent:10000px;
+	width: 30px;
+}
+
+input.bbcode_left {
+	background: url(img_bbcode/left.png) no-repeat;
+	text-indent:10000px;
+}
+
+input.bbcode_center {
+	background: url(img_bbcode/center.png) no-repeat;
+	text-indent:10000px;
+}
+
+input.bbcode_right {
+	background: url(img_bbcode/right.png) no-repeat;
+	text-indent:10000px;
+}
+
+input.bbcode_justified {
+	background: url(img_bbcode/justified.png) no-repeat;
+	text-indent:10000px;
+	width: 30px;
+}
+
+input.bbcode_youtube {
+	background: url(img_bbcode/youtube.gif) no-repeat;
+	text-indent:10000px;
+	width: 14px;
+	margin: 2px 3px;
+}
+
+input.bbcode_dailymotion {
+	background: url(img_bbcode/dailymotion.gif) no-repeat;
+	text-indent:10000px;
+	margin:2px;
+}
+
+.smilies {
+	display: block;
+	width: 450px;
+	margin: 10px auto 0 auto;
+	text-align:center;
+}
+
+.smilies img {
+	margin: 2px 1.5px 3px 1.5px;
+}
+
+.moresmilies {
+	display:block;
+	width:450px;
+	text-align:right;
+	margin:0 auto 10px auto;
+}
+
+.moresmilies a {
+	font-weight:bold;
+	font-size:0.8em;
+}
+
+.colorchooser {
+	width: 80px;
+	height: 1.6em;
+}
+
+.colortitle {
+	color: black;
+	font-weight: bold;
+}
+
+.coloritem {
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+.sizechooser {
+	width: 80px;
+	height: 1.6em;
+}
+
+.sizetitle {
+	color: black;
+	font-weight: bold;
+}
+
+.sizeitem {
+	width: 80px;
+}
+
+.fontchooser {
+	width: 80px;
+	height: 1.6em;
+}
+
+.fonttitle {
+	color: black;
+	font-weight: bold;
+}
+
+.fontitem {
+	width: 80px;
+}
+
+.showwritehelper,.showwritehelper a {
+	display: block;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-decoration: none;
+	width: 400px;
+}
+
+/** Messages personnels **/
+.mp_infos {
+	width: 60%;
+	text-align: center;
+	background-color: rgb(245, 245, 245);
+	border: 1px solid rgb(80, 80, 80);
+	margin: 0 auto 8px auto;
+	padding: 8px 0 8px 0;
+}
+
+.mp_menu {
+	width: 100%;
+	text-align: center;
+	padding: 4px;
+	height: 20px;
+}
+
+.mp_menu_pages {
+	float: left;
+}
+
+.mp_menu_forselection {
+	float: right;
+	margin-right: 15px;
+}
+
+.mp_message {
+	width: 100%;
+	text-align: center;
+	padding: 4px;
+	background: rgb(245, 245, 245);
+}
+
+.mp_tbl_readornot {
+	width: 25px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.mp_tbl_sender {
+	width: 200px;
+	text-align: center;
+}
+
+.mp_tbl_date {
+	width: 200px;
+	text-align: center;
+}
+
+.mp_tbl_delete {
+	width: 20px;
+}
+
+.mp_tbl_radio {
+	width: 20px;
+}
+
+/** Recherches **/
+#src_form_link {
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 5px 16px 15px 16px;
+	padding: 5px;
+	text-align: center;
+}
+
+.srcuser {
+	width: 160px;
+	text-align: center;
+	padding: 3px;
+	vertical-align: top;
+}
+
+.srcinfo {
+	padding: 3px;
+}
+
+/* Highlight pour les recherches */
+.hl {
+	font-weight: bold;
+	color: red;
+	background: yellow;
+}
+
+/** Inscription **/
+.reg_check {
+	font-weight: bold;
+}
+
+.reg_valid {
+	color: green;
+}
+
+.reg_error {
+	color: red;
+}
+
+#reg_mail_warning span {
+	display: block;
+	width: 400px;
+	border: 1px solid rgb(51, 102, 153);
+	background: white;
+	padding: 3px;
+}
+
+#captcha_box {
+	float:left;
+	border:1px solid rgb(51, 102, 153);
+	background: white;
+	width:400px;
+}
+
+#captcha_code {
+	display:block;
+	width:200px;
+	padding: 3px;
+	float:left;
+}
+
+#captcha {
+	width:190px;
+	height:40px;
+}
+
+#captcha_form {
+	display:block;
+	width:180px;
+	padding: 3px;
+	float:right;
+}
+
+#reg_rules {
+	clear:both;
+	padding-top:14px;
+}
+
+#verifpseudoimage {
+	border: 1px solid black;
+	text-align: center;
+	padding: 5px;
+	margin-right: 15px;
+	background-color: rgb(154, 250, 236);
+}
+
+#r_rules_details {
+	display: block;
+	width: 400px;
+	height: 120px;
+	border: 1px solid rgb(51, 102, 153);
+	background: white;
+	overflow: auto;
+	padding: 3px;
+}
+
+/** Profil des utilisateurs. **/
+.usrpr_avatar,.usrpr_signature {
+	clear: both;
+	display: block;
+	background: rgb(225, 225, 225);
+	padding: 10px;
+	margin: 4px 20px 4px 20px;
+}
+
+.gallery_avatar {
+	float:left;
+	width: 180px;
+	overflow: hidden;
+	margin: 10px;
+	text-align: center;
+}
+
+.gallery_avatar img {
+	display: block;
+	margin: 3px auto;
+	border: 3px solid white;
+	background: #ffffff;
+}
+
+
+#presentation {
+	width: 400px;
+	height: 60px;
+}
+
+.presentation {
+	display: block;
+	background: rgb(225, 225, 225);
+	padding: 10px;
+	margin: 4px 20px 4px 20px;
+}
+
+/** Affichage des utilisateurs. **/
+.sulabel {
+	clear: none;
+	float: left;
+	width: auto;
+	overflow: visible;
+	white-space: nowrap;
+	margin-right: 10px;
+}
+
+.usersconnected {
+	width: 25px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.usersposts {
+	width: 100px;
+	text-align: center;
+}
+
+.usersclass {
+	width: 140px;
+	text-align: center;
+}
+
+.usersreg {
+	width: 120px;
+	text-align: center;
+}
+
+/** Affichage des connectés **/
+.ppl_name {
+	width: 200px;
+}
+
+.ppl_lastclick {
+	width: 250px;
+}
+
+/** Panneau de modération **/
+.sp_name {
+	width: 20%;
+}
+
+.sp_type {
+	width: 25%;
+}
+
+.sp_timeleft {
+	width: 30%;
+}
+
+.sp_options {
+	width: 25%;
+}
+
+.rep_user {
+	width: 100px;
+	vertical-align: top;
+}
+
+.rep_time {
+	width: 160px;
+	vertical-align: top;
+}
+
+.rep_options {
+	width: 150px;
+	vertical-align: top;
+}
+
+.am_field,.mod_note {
+	width: 95%;
+	padding: 5px;
+	margin: 5px auto 5px auto;
+	background: rgb(239, 244, 250);
+	border: 1px solid rgb(48, 99, 151);
+}
+
+/** Réputation des membres **/
+.reputation {
+	display: block;
+	width: 125px;
+	height: 25px;
+	border: 1px solid rgb(190, 190, 190);
+}
+
+.rep_star_on {
+	background: url(img_icons/star_on.jpg) 0 0 no-repeat;
+	width: 25px;
+	height: 25px;
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+
+.rep_star_off {
+	background: url(img_icons/star_off.jpg) 0 0 no-repeat;
+	width: 25px;
+	height: 25px;
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+
+/********************* Formatage des icones du forum *********************/
+/** RSS **/
+.ico_rss {
+	background: url(img_icons/rss.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	float: right;
+	margin: 8px 8px 0 0;
+}
+
+/** Icones d'état de sujets **/
+.st_r {
+	background: url(img_icons/st_r.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_u {
+	background: url(img_icons/st_u.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_clsd_r {
+	background: url(img_icons/st_clsd_r.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_clsd_u {
+	background: url(img_icons/st_clsd_u.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_poll_r {
+	background: url(img_icons/st_poll_r.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_poll_u {
+	background: url(img_icons/st_poll_u.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_r_p {
+	background: url(img_icons/st_r_p.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_u_p {
+	background: url(img_icons/st_u_p.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_clsd_r_p {
+	background: url(img_icons/st_clsd_r_p.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_clsd_u_p {
+	background: url(img_icons/st_clsd_u_p.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_poll_r_p {
+	background: url(img_icons/st_poll_r_p.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_poll_u_p {
+	background: url(img_icons/st_poll_u_p.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_disp {
+	background: url(img_icons/st_disp.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_bookmark {
+	background: url(img_icons/st_bookmark.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_mail {
+	background: url(img_icons/st_mail.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_pin {
+	background: url(img_icons/st_pin.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_ann {
+	background: url(img_icons/st_ann.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.st_tg_r {
+	background: url(img_icons/st_tg_r.png) 0 0 no-repeat;
+	width: 22px;
+	height: 22px;
+	display: block;
+	margin: auto;
+}
+
+.st_tg_u {
+	background: url(img_icons/st_tg_u.png) 0 0 no-repeat;
+	width: 22px;
+	height: 22px;
+	display: block;
+	margin: auto;
+}
+
+.st_tg_link {
+	background: url(img_icons/st_tg_link.png) 0 0 no-repeat;
+	width: 22px;
+	height: 22px;
+	display: block;
+	margin: auto;
+}
+
+/** Icones relatives aux messages personnels **/
+.mp {
+	display: block;
+	margin: 0 0 0 5px;
+	float: left;
+	width:16px;
+	height:16px;
+	background:url(img_icons/mp.png) 0 0 no-repeat;
+}
+
+.mp_r {
+	background: url(img_icons/mp_r.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.mp_u {
+	background: url(img_icons/mp_u.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.mp_del {
+	background: url(img_icons/mp_del.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: auto;
+}
+
+.mp_delete {
+	display: block;
+	margin: 0 5px;
+}
+
+.mp_reply {
+	display: block;
+	margin: 0 5px;
+}
+
+/** Gros boutons **/
+.bb_t_reply, .bb_t_fl_rep, .bb_t_clsd, .bb_t_mod, .bb_tg_topic, .bb_tg_poll {
+	height: 20px;
+	line-height:20px;
+	padding: 2px 5px 2px 23px;
+	margin: 0 0 0 3px;
+}
+
+.bb_t_reply span, .bb_t_fl_rep span, .bb_t_clsd span, .bb_t_mod span, .bb_tg_topic span, .bb_tg_poll span {
+	font-size:0.9em;
+}
+
+.bb_t_reply {
+	/* #CBD6E5 #A1B4CD */
+	background: url(img_icons/bb_reply.png) 2px 2px no-repeat;
+}
+
+.bb_t_fl_rep {
+	background: url(img_icons/bb_flreply.png) 2px 2px no-repeat;
+}
+
+.bb_t_clsd {
+	/* rgb(227, 227, 227) */
+	background: url(img_icons/bb_closed.png) 2px 2px no-repeat;
+}
+
+.bb_t_mod {
+	background: url(img_icons/bb_mod.png) 2px 2px no-repeat;
+}
+
+.bb_tg_topic {
+	background: url(img_icons/bb_topic.png) 2px 2px no-repeat;
+}
+
+.bb_tg_poll {
+	background: url(img_icons/bb_poll.png) 2px 2px no-repeat;
+}
+
+.bb_t_reply:hover, .bb_t_fl_rep:hover,
+.bb_t_mod:hover, .bb_tg_topic:hover, .bb_tg_poll:hover {
+	text-decoration:none;
+	color:white;
+}
+
+.bb_t_reply:hover {
+	background: #A1B4CD url(img_icons/bb_reply.png) 2px 2px no-repeat;
+}
+
+.bb_t_fl_rep:hover {
+	background: #A1B4CD url(img_icons/bb_flreply.png) 2px 2px no-repeat;
+}
+
+.bb_t_mod:hover {
+	background: #A1B4CD url(img_icons/bb_mod.png) 2px 2px no-repeat;
+}
+
+.bb_tg_topic:hover {
+	background: #A1B4CD url(img_icons/bb_topic.png) 2px 2px no-repeat;
+}
+
+.bb_tg_poll:hover {
+	background: #A1B4CD url(img_icons/bb_poll.png) 2px 2px no-repeat;
+}
+
+
+/** Petits boutons **/
+.sb_m_delete,.sb_m_report,.sb_m_edit,.sb_m_quote {
+	display: block;
+	width: 22px;
+	height: 22px;
+	margin: 0 2px;
+}
+
+.sb_m_delete { background: url(img_icons/sb_m_delete.png) 0 0 no-repeat; }
+.sb_m_report { background: url(img_icons/sb_m_report.png) 0 0 no-repeat; }
+.sb_m_edit { background: url(img_icons/sb_m_edit.png) 0 0 no-repeat; }
+.sb_m_quote { background: url(img_icons/sb_m_quote.png) 0 0 no-repeat; }
+
+.sb_scroll {
+	display: block;
+	background: url(img_icons/sb_scroll.png) 0 0 no-repeat;
+	width: 22px;
+	height: 22px;
+	margin: 0 10px;
+}
+
+/** Utilisateur connectés ou non **/
+.usr_online {
+	background: url(img_icons/usr_online.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	float: left;
+}
+
+.usr_offline {
+	background: url(img_icons/usr_offline.png) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	float: left;
+}
+
+/** Icones diverses **/
+.quickjoin {
+	background: url(img_icons/quickjoin.png) 0 0 no-repeat;
+	width: 18px;
+	height: 14px;
+	display: block;
+	float: left;
+}
+
+.mail {
+	display: block;
+	margin: 0 0 0 5px;
+	float: left;
+	width:16px;
+	height:16px;
+	background:url(img_icons/mail.png) 0 0 no-repeat;
+}
+
+.www {
+	display: block;
+	margin: 0 0 0 5px;
+	float: left;
+	width:16px;
+	height:16px;
+	background:url(img_icons/www.png) 0 0 no-repeat;
+}
+
+/** Textes à ne pas afficher (boutons 'images') **/
+.ico_rss span,.usr_online span,.usr_offline span,.quickjoin span,.sb_scroll span,
+.st_tg_u span,.st_tg_r span,.st_tg_link span,.st_r span,.st_u span,
+.st_clsd_r span,.st_clsd_u span,.st_poll_r span,.st_poll_u span,
+.st_disp span,.st_pin span,.st_ann span,.st_bookmark span,.st_mail span,
+.st_r_p span,.st_u_p span,.st_clsd_r_p span,.st_clsd_u_p span,.st_poll_r_p span,.st_poll_u_p span,
+.mp_r span,.mp_u span,.mp_del span,
+.sb_m_delete span,.sb_m_report span,.sb_m_edit span,.sb_m_quote span,
+.mp span, .www span, .mail span {
+	position: absolute;
+	left: 0;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+/** PROMPT JAVASCRIPT AMELIORE **/
+#cbprompt,#cbalert {
+	display: block;
+	position: absolute;
+	top: 400px;
+	left: 50%;
+	width: 450px;
+	margin-left: -225px;
+	background: url(img_skin/prompt-top.png) top no-repeat;
+	color:white;
+}
+
+html>body #cbprompt,html>body #cbalert {
+	position: fixed;
+	top: 42%;
+}
+
+#cbprompt p,#cbalert p {
+	padding: 6px 18px;
+	background:url(img_skin/prompt-back.png);
+}
+
+#cbprompt form,#cbalert form {
+	padding:0 0 10px 0;
+	background:url(img_skin/prompt-bottom.png) bottom no-repeat;
+}
+
+/* Message d'avertissement */
+#prompt_message,#alert_message {
+	margin: 10px 0 0 0;
+	font-weight: bold;
+	color: white;
+}
+
+/* Formulaire, un simple input de type text */
+#prompt_form, #alert_input {
+	text-align: center;
+}
+
+#prompt_value, #alert_field {
+	border: 1px solid #BBBBBB;
+	width: 350px;
+}
+
+/* Boutons de confirmation ou annulation */
+p#prompt_submit , p#alert_submit {
+	text-align: center;
+}
+
+#prompt_submit input  , #alert_submit input {
+	padding: 1px 12px;
+}
+
+#prompt_ok {
+	border: 1px solid #BBBBBB;
+}
+
+#prompt_cancel {
+	border: 1px solid #BBBBBB;
+	margin-left: 15px;
+}
+
+/* Message d'attente */
+#cbwait {
+	width: 450px;
+	background: url(img_skin/prompt-top.png) top no-repeat;
+	display: block;
+	position: absolute;
+	padding: 10px 0 0 0;
+	top: 400px;
+	text-align: center;
+	left: 50%;
+	margin: 0 0 0 -225px;
+}
+
+html>body #cbwait {
+	position: fixed;
+	top: 42%;
+}
+
+#cbwait p {
+	padding: 0 0 10px 0;
+	background: url(img_skin/prompt-bottom.png) bottom no-repeat;
+}
+
+#cbwait p #wait_inside {
+	display:block;
+	margin:0;
+	padding:10px 0;
+	width:450px;
+	background: url(img_skin/prompt-back.png);
+}
+
+#cbwait p #wait_inside span {
+	display:block;
+	width:300px;
+	border:1px solid #BBBBBB;
+	margin:0 auto;
+	padding:50px 0 15px 0;
+	background: white url(img_icons/ajax-loader.gif) center 10px no-repeat;
+}
+
+/* Menus de smileys en popup */
+#smilieswindow {
+	width: 450px;
+	background: url(img_skin/prompt-top.png) top no-repeat;
+	display: block;
+	position: absolute;
+	padding: 10px 0 0 0;
+	top: 400px;
+	text-align: center;
+	left: 50%;
+	margin: 0 0 0 -225px;
+}
+
+html>body #smilieswindow {
+	position: fixed;
+	top: 42%;
+}
+
+#smilieswindow .cancel, #smilieswindow .smilies {
+	display:block;
+	width:450px;
+	padding:6px 0;
+	margin:0;
+	background:url(img_skin/prompt-back.png);
+}
+
+#smilieswindow .smilies_field {
+	display:block;
+	width:380px;
+	background:white;
+	border:1px solid #BBBBBB;
+	text-align:center;
+	margin:10px auto 0 auto;
+	padding:10px 0;
+}
+
+#smilieswindow .smilieswindow_menu {
+	display:block;
+	padding: 0 0 10px 0;
+	background: url(img_skin/prompt-bottom.png) bottom no-repeat;
+}

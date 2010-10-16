@@ -1,0 +1,78 @@
+retirer show_posted, postguest de la table de config
+ALTER TABLE CB_TABLE_PREFIXconnected ENGINE = MEMORY
+ALTER IGNORE TABLE CB_TABLE_PREFIXconnected ADD INDEX ( con_position )
+
+CREATE TABLE `CB_TABLE_PREFIXranks` (
+`rk_id` SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`rk_name` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+`rk_posts` INT UNSIGNED NOT NULL
+) ENGINE = MYISAM ;
+
+SET NAMES 'utf8';
+
+
+ALTER TABLE `messages` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci 
+ALTER TABLE `messages` CHANGE `msg_message` `msg_message` MEDIUMTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL 
+ALTER TABLE `mp` CHANGE `mp_content` `mp_content` MEDIUMTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL 
+ALTER TABLE `users` CHANGE `usr_presentation` `usr_presentation` MEDIUMTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL 
+
+
+ALTER TABLE `smileys` ADD `sm_form` TINYINT( 2 ) NOT NULL DEFAULT '1' AFTER `sm_symbol` ;
+
+ALTER TABLE `messages` CHANGE `msg_guest` `msg_guest` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
+CHANGE `msg_message` `msg_message` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL 
+ALTER TABLE `automessages` CHANGE `am_name` `am_name` VARCHAR( 100 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+CHANGE `am_message` `am_message` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL 
+ALTER TABLE `config` CHANGE `cf_field` `cf_field` VARCHAR( 20 ) NOT NULL ,
+ALTER TABLE `config` ADD `timezone` VARCHAR( 5 ) NOT NULL ,
+ADD `summertime` TINYINT( 1 ) NOT NULL ;
+CHANGE `cf_value` `cf_value` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL 
+ALTER TABLE `connected` CHANGE `con_position` `con_position` VARCHAR( 127 ) NOT NULL 
+ALTER TABLE `forums` CHANGE `forum_name` `forum_name` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL 
+ALTER TABLE `groups` CHANGE `gr_name` `gr_name` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+CHANGE `gr_color` `gr_color` VARCHAR( 255 ) NOT NULL ,
+CHANGE `gr_mod` `gr_mod` TEXT NOT NULL ,
+CHANGE `gr_auth_create` `gr_auth_create` TEXT NOT NULL ,
+CHANGE `gr_auth_reply` `gr_auth_reply` TEXT NOT NULL ,
+CHANGE `gr_auth_see` `gr_auth_see` TEXT NOT NULL 
+ALTER TABLE `modnotes` CHANGE `mn_note` `mn_note` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL 
+ALTER TABLE `mp` CHANGE `mp_subj` `mp_subj` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+CHANGE `mp_content` `mp_content` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL 
+ALTER TABLE `pollpossibilities` CHANGE `poss_name` `poss_name` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL 
+ALTER TABLE `polls` CHANGE `poll_question` `poll_question` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+CHANGE `poll_voted` `poll_voted` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL 
+ALTER TABLE `ranks` CHANGE `rk_name` `rk_name` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL 
+ALTER TABLE `reports` CHANGE `rep_desc` `rep_desc` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL 
+ALTER TABLE `smileys` CHANGE `sm_symbol` `sm_symbol` VARCHAR( 25 ) NOT NULL ,
+CHANGE `sm_filename` `sm_filename` VARCHAR( 100 ) NOT NULL ,
+CHANGE `sm_orig_used` `sm_orig_used` ENUM( 'oui', 'non' ) NOT NULL DEFAULT 'oui'
+ALTER TABLE `src_words` CHANGE `sw_word` `sw_word` VARCHAR( 100 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL 
+ALTER TABLE `stats` CHANGE `st_field` `st_field` VARCHAR( 20 ) NOT NULL 
+ALTER TABLE `topicgroups` CHANGE `tg_name` `tg_name` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+CHANGE `tg_comment` `tg_comment` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+CHANGE `tg_link` `tg_link` TEXT NOT NULL 
+ALTER TABLE `topics` CHANGE `topic_name` `topic_name` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+CHANGE `topic_comment` `topic_comment` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+CHANGE `topic_guest` `topic_guest` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL 
+ALTER TABLE `users` CHANGE `usr_name` `usr_name` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+CHANGE `usr_password` `usr_password` VARCHAR( 32 ) NOT NULL ,
+CHANGE `usr_changepass` `usr_changepass` VARCHAR( 32 ) NOT NULL ,
+CHANGE `usr_changepass_c` `usr_changepass_c` VARCHAR( 32 ) NOT NULL ,
+CHANGE `usr_registered` `usr_registered` VARCHAR( 32 ) NOT NULL ,
+CHANGE `usr_email` `usr_email` VARCHAR( 255 ) NOT NULL ,
+CHANGE `usr_msn` `usr_msn` VARCHAR( 255 ) NOT NULL ,
+CHANGE `usr_icq` `usr_icq` VARCHAR( 255 ) NOT NULL ,
+CHANGE `usr_aim` `usr_aim` VARCHAR( 255 ) NOT NULL ,
+CHANGE `usr_yahoo` `usr_yahoo` VARCHAR( 255 ) NOT NULL ,
+CHANGE `usr_place` `usr_place` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+CHANGE `usr_presentation` `usr_presentation` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+CHANGE `usr_realname` `usr_realname` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+CHANGE `usr_website` `usr_website` VARCHAR( 150 ) NOT NULL ,
+CHANGE `usr_mod` `usr_mod` TEXT NOT NULL ,
+CHANGE `usr_punished` `usr_punished` VARCHAR( 100 ) NOT NULL ,
+CHANGE `usr_avatar` `usr_avatar` VARCHAR( 255 ) NOT NULL ,
+CHANGE `usr_signature` `usr_signature` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+CHANGE `usr_pref_lang` `usr_pref_lang` VARCHAR( 10 ) NOT NULL ,
+CHANGE `usr_pref_skin` `usr_pref_skin` VARCHAR( 40 ) NOT NULL ,
+CHANGE `usr_pref_timezone` `usr_pref_timezone` VARCHAR( 5 ) NOT NULL 
+ALTER TABLE `usertgs` ADD `utg_mail` TINYINT( 1 ) NOT NULL DEFAULT '0';

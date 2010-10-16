@@ -1,0 +1,54 @@
+<?php
+/**
+* auxi.lang
+* Lang definition file.
+* Contains the french translation for Connectix Boards.
+* Made by Jasienski Martin
+* ::Connectix Boards 2005::
+*/
+$merge = array (
+	/* Enregistrement */
+	'r_mail_warning' => 'La confirmation d\'inscription par mail a été activée par l\'administrateur. Vous recevrez un mail avec une adresse particulière où vous rendre pour valider votre compte. L\'adresse mail renseignée ici doit donc impérativement être valide.',
+	'r_acceptrules' => 'J\'ai lu et j\'accepte les <a href="index.php?act=rules">règles</a>.',
+	'r_comments' => 'Ces règles sont à respecter lors de toute action sur ce forum. L\'équipe d\'administration et de modération du forum se réserve le droit de prendre les mesures qui s\'imposent en cas de transgression à celles-ci.',
+	'reg_success_mail' => 'L\'enregistrement s\'est déroulé avec succès. L\'administrateur a choisi d\'activer la validation des inscriptions par mail. Vous devriez recevoir ce-dernier dans les minutes qui suivent (normalement instantanément)<br />Retour vers la <a href="index.php">page d\'accueil</a>.',
+	'reg_success_nomail' => 'L\'enregistrement s\'est déroulé avec succès. Vous pouvez maintenant vous connecter.<br />Aller à la <a href="index.php?act=login">page de connexion</a>.',
+
+	/* Validation */
+	'validate' => 'Valider un code de confirmation',
+	'val_badregcode' => 'Le code de validation fourni n\'est pas correct. Vérifiez que vous ne l\'avez pas déjà validé ou que vous ne vous êtes pas trompé en recopiant le lien proposé.',
+	'val_confirmed_mess' => 'Votre compte a été validé. Vous pouvez vous connecter maintenant.',
+	'val_cp_ok' => 'La validation du nouveau mot de passe a été réalisée avec succès. Vous pouvez maintenant vous connecter avec le mot de passe renseigné dans le mail que vous avez reçu.',
+	'val_cp_ko' => 'La validation du nouveau mot de passe a échoué. Vérifiez que le lien que vous avez suivi n\'est pas erroné.',
+
+	/* Signalement */
+	'rep_success' => 'Votre signalement a correctement été enregistré, et sera communiqué à l\'équipe de modération concernée. Vous pouvez continuer à surfer normalement sur le forum.',
+	'report' => 'Signaler un message',
+	'rep_report' => 'Signaler un message aux modérateurs',
+	'rep_infos_title' => 'Informations',
+	'rep_infos' => 'Cet outil sert à signaler aux modérateurs et admins un message qui selon vous devrait être sanctionné. Veuillez justifier la raison de votre requète. Cet outil sert à alléger le travail des modérateurs, veuillez vous en servir à bon escient. Tout abus sera puni.',
+	'rep_message_title' => 'Accompagner le signalement d\'un message de justification (obligatoire)',
+
+	/* Debug */
+	'debug_title' => 'Affichage des requètes effectuées',
+	'debug_time_title' => 'Temps d\'exécution',
+	'debug_query_title' => 'Requète',
+	'debug_totaltime' => 'Temps total d\'exécution des requètes',
+	'debug_numberqueries' => 'Nombre de requètes',
+
+	/* Changement de mot de passe */
+	'changepass' => 'Récupération de mot de passe',
+	'cp_infos' => 'Un mail va être envoyé à l\'adresse e-mail mentionnée, avec le login associé à cette adresse. Ce mail contiendra un nouveau mot de passe aléatoire ainsi qu\'un lien pour que ce nouveau mot de passe devienne actif. Avant validation, l\'ancien mot de passe sera toujours actif. Une fois que vous aurez validé ce nouveau mot de passe, connectez-vous et vous pourrez changer ce mot de passe dans le panneau de commandes utilisateur.',
+	'cp_email' => 'Adresse e-mail',
+	'cp_success_mail' => 'Le mail contenant le nouveau mot de passe a été envoyé avec succès.',
+
+	/* Personnes connectées */
+	'connusers' => 'Personnes connectées sur le forum',
+	'cu_guest' => 'Invité',
+	'cu_ppl_name' => 'Utilisateur',
+	'cu_ppl_location' => 'Endroit du dernier clic',
+	'cu_ppl_lastclick' => 'Moment du dernier clic'
+	);
+
+$this->lang = array_merge($this->lang,$merge);
+?>

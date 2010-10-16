@@ -1,0 +1,30 @@
+# robots.txt file for Connectix Boards
+User-agent: *
+# General
+Disallow: /rss.php
+Disallow: /admin/
+Disallow: /avatars/
+Disallow: /bbcode/
+Disallow: /data/
+Disallow: /include/
+Disallow: /install/
+Disallow: /lang/
+Disallow: /skins/
+Disallow: /smileys/
+Disallow: /templates/
+# Without URL rewriting
+Disallow: /index.php?act=user&editprofile
+Disallow: /index.php?act=src
+Disallow: /index.php?act=members
+Disallow: /index.php?act=mods
+Disallow: /index.php?act=cu
+Disallow: /index.php?act=tlist
+Disallow: /index.php?showtopic=*&message=
+# With URL rewriting
+Disallow: /forum-search.html
+Disallow: /forum-members.html
+Disallow: /forum-moderators.html
+Disallow: /forum-connected.html
+Disallow: /forum-profile
+Disallow: /forum-tlist.html
+Disallow: /forum-t*-m*.html

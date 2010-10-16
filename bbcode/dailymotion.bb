@@ -1,0 +1,3 @@
+<div><object width="480" height="381"><param name="movie" value="{--CONTENTS--}"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="{--CONTENTS--}&amp;related=1" type="application/x-shockwave-flash" width="480" height="381" allowFullScreen="true" allowScriptAccess="always"></embed></object></div>
+-noparse-
+if (strpos($c,'/') !== false) $c = 'http://www.dailymotion.com/swf/'.substr($c,(strrpos($c,'/')+1));

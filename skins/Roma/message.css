@@ -1,0 +1,145 @@
+/**
+* Fichier CSS de Connectix Boards v0.8, pour erreurs et messages
+* 
+* Fichier sous license GNU-GPL
+* Auteur: Jasienski Martin
+*/
+@import url(bbcode.css);
+
+* {margin: 0; padding: 0;}
+
+body {
+	background: url(img_skin/bg.gif);	
+	font-family: Verdana, "Century Gothic", Arial, serif;
+	font-size: 0.8em;
+	font-weight: normal;
+	color: #444444;
+}
+
+#template {
+	width: 600px;
+	margin: 60px auto 0 auto;
+}
+
+/* Forme de tous les liens */
+a {
+	color: rgb(255, 136, 17);
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Verdana, "Century Gothic", Arial, serif;
+}
+
+a:hover {
+	color: rgb(255, 136, 17);
+	text-decoration: underline;
+}
+
+/* Titre du header */
+h1 #headerlink {
+	text-decoration: none;
+	font: normal Verdana, "Century Gothic", Arial, serif;
+	line-height:92px;
+	font-size:25px;
+	color:#666666;
+}
+
+/* Titres de sections */
+h2 {
+	text-align: left;
+	height: 25px;
+	line-height: 25px;
+	font-weight: bold;
+	font-size: 1.05em;
+	color: #666666;
+	border-bottom: 3px solid #666666;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+}
+
+/* Puce devant les titres */
+.title_pre {
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin: 4px 6px 0 5px;
+	background: url(img_skin/asterisk_orange.png) no-repeat left;
+	cursor: pointer;
+}
+
+.title_pre span {
+	position: absolute;
+	left: 0;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+/** EN-TETE **/ 
+/* Elément d'en-tête (div) */
+#header {
+	padding: 0 10px;
+	height: 108px;
+	background: white url(img_skin/header.gif) 4px 4px no-repeat;
+	text-indent: 130px;
+}
+
+/** PIED DE PAGE **/ /* Element général */
+#footer {
+	clear: both;
+	margin: 7px 0;
+	color:white;
+}
+
+/* Sous �l�ment, comprenant les informations de copyright et d'ex�cution de la page */
+#copyright {
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+
+#copyright a {
+	font-weight: bold;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+	color: rgb(255, 136, 17);
+}
+
+/** BLOC CONTENEUR **/
+.container {
+	clear:both;
+	padding: 15px 15px 35px 15px;
+	background:white;
+}
+
+.inforow,.inforow_links {
+	padding: 5px;
+	border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.inforow_links {
+	text-align: center;
+}
+
+/* Bloc de code */
+.code {
+	display: block;
+	border-left: 4px solid rgb(117, 149, 200);
+	background-color: rgb(230, 230, 230);
+	margin: 10px 15px;
+	padding: 2px;
+	font-family: courier;
+	overflow: auto;
+}
+
+.citation {
+	margin: 10px 15px;
+	border: 1px dotted rgb(48, 99, 151);
+	border-left: 4px solid rgb(255, 136, 17);
+	background: rgb(250, 252, 254);
+	padding: 2px;
+}
+
+/* Italique */
+.i {
+	font-style: italic;
+}

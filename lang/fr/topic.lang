@@ -1,0 +1,56 @@
+<?php
+/**
+* userprofile.lang
+* Lang definition file.
+* Contains the french translation for Connectix Boards.
+* Made by Jasienski Martin
+* ::Connectix Boards 2005::
+*/
+$merge = array (
+	't_directlink' => 'Voici le lien direct vers ce message',
+	't_edited' => 'Ce message a été édité par {user} le {date1} à {date2}.',
+	't_fastreply' => 'Réponse rapide',
+	't_fr_message' => 'Composez votre message',
+	't_track' => 'Suivre ce sujet',
+	't_notrack' => 'Ne plus suivre ce sujet',
+	't_tracked' => 'Vous venez d\'activer le suivi de ce sujet par mail. Vous serez alerté par l\'envoi d\'un mail lorsqu\'un nouveau message sera posté dans ce sujet.',
+	't_nottracked' => 'Ce sujet ne fait plus l\'objet du suivi par mail.',
+	't_bookmark' => 'Mettre en favori',
+	't_nobookmark' => 'Retirer des favoris',
+	't_bookmarked' => 'Ce sujet fait désormais partie de vos favoris.',
+	't_notbookmarked' => 'Ce sujet ne fait plus partie de vos favoris.',
+	't_postbyguest' => 'Ce message a été posté par un invité.',
+	't_msg_read' => 'Message lu',
+	't_msg_unread' => 'Message non-lu',
+	't_poll_title' => 'Sondage',
+	't_poll_white' => 'Vote blanc',
+	't_poll_vote' => 'Voter !',
+	't_poll_votes' => 'vote(s)',
+	't_poll_votes_voted' => 'Nombre total de votes (non-blancs)',
+	't_poll_white_voted' => 'Nombre de votes blancs',
+	't_poll_alreadyvoted' => 'Vous ne pouvez plus voter',
+	't_poll_notvoted' => 'Vous n\'avez pas encore voté',
+	't_poll_notgood_voted' => 'La proposition sélectionnée est erronée.',
+	't_poll_modifymode' => 'Modifier le sondage',
+	't_poll_normalmode' => 'Voir le sondage',
+	't_poll_confirmedit' => 'Enregistrer les modifications apportées aux possibilités',
+	't_poll_changedfields' => 'Les possibilités de réponse au sondage ont bien été modifiées.',
+	't_poll_poss_tooshort' => 'Les possibilités de réponses aux sondages doivent faire au moins 2 caractères de long.',
+	't_poll_poss_added' => 'La possibilité de réponse au sondage a correctement été ajoutée.',
+	't_poll_addposs' => 'Ajouter une possibilité de réponse au sondage',
+	't_rank' => 'Rang',
+
+	/* Boutons */
+	'sb_scroll' => 'Remonter',
+	'sb_m_quote' => 'Citer',
+	'sb_m_edit' => 'Modifier',
+	'sb_m_report' => 'Signaler',
+	'sb_m_delete' => 'Supprimer',
+	'bb_t_reply' => 'Répondre',
+	'bb_t_fl_rep' => 'Réponse rapide',
+	'bb_t_clsd' => 'Sujet Fermé',
+	'bb_t_mod' => 'Modération',
+	);
+
+$this->lang = array_merge($this->lang,$merge);
+?>

@@ -1,0 +1,20 @@
+<?php
+/**
+* rss.lang
+
+* Contains the french translation for Connectix Boards.
+* Made by Jasienski Martin
+* ::Connectix Boards 2005::
+*/
+$merge = array (
+	'rss_replyby' => 'Réponse de',
+	'rss_date' => 'le',
+	'rss_subjectby' => 'Un sujet de',
+	'rss_containing' => 'contenant',
+	'rss_replies' => 'réponses',
+	'rss_reply' => 'réponse',
+	'rss_last_message' => 'Le dernier message fut posté par',
+	);
+
+$this->lang = array_merge($this->lang,$merge);
+?>

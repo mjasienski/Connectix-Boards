@@ -1,0 +1,269 @@
+/* Pour toute la page. */
+body {
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, "Century Gothic", Arial, serif;
+	font-size: 0.8em;
+	font-weight: normal;
+	color: #444444;
+}
+
+#template {
+	background: white url(../../admin/design/header-repeat.gif) repeat-x;
+	padding: 0 0 0 25px;
+	margin: 0;
+}
+
+#main {
+	padding: 0 25px 0 0;
+	margin: 0;
+}
+
+strong {
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* Forme de tous les liens */
+a img {
+	border: none;
+}
+
+a {
+	color: #222222;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Verdana, "Century Gothic", Arial, serif;
+}
+
+a:hover {
+	color: rgb(255, 136, 17);
+	text-decoration: underline;
+}
+
+table td a,table td a:hover,fieldset a,fieldset a:hover {
+	text-decoration: underline;
+}
+
+/* Titre du header */
+h1 #headerlink {
+	text-decoration: none;
+	font: bold 1.3em Georgia, "Trebuchet MS", Verdana, "Century Gothic",
+		Arial, serif;
+	color: white;
+	padding: 16px 0 0 10px;
+}
+
+/* Titres de sections */
+h2 {
+	background: rgb(48, 99, 151) url(../../admin/design/headmenu.gif) bottom
+		repeat-x;
+	border-bottom: 1px solid rgb(51, 102, 153);
+	padding: 0px;
+	text-align: left;
+	height: 34px;
+	line-height: 33px;
+	margin: 0px;
+	font-weight: bold;
+	font-size: 1.15em;
+	color: white;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+}
+
+/* Titres des menus */
+h3 {
+	padding: 5px;
+	margin: 0px;
+	height: 28px;
+	line-height: 26px;
+	background: rgb(48, 99, 151);
+	text-align: center;
+	font-size: 1.15em;
+	color: white;
+	font-weight: bold;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+	border-bottom: 1px solid rgb(51, 102, 153);
+}
+
+h4 {
+	font-weight: bold;
+	font-style: italic;
+	margin: 3px 0px;
+	padding: 0px;
+	font-size: 1em;
+}
+
+/* Puce devant les titres */
+.title_pre {
+	display: block;
+	float: left;
+	width: 26px;
+	height: 14px;
+	margin: 10px 8px 0px 0px;
+	padding: 0px;
+	background: url(../../admin/design/plug.gif) no-repeat left;
+}
+
+.title_pre span {
+	position: absolute;
+	left: 0;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+/** EN-TETE **/ /* Elément d'en-tête (div) */
+#header {
+	height: 100px;
+	text-indent: 130px;
+	margin: 0 0 10px 0;
+	background: url(../../admin/design/header.gif) top left no-repeat;
+}
+
+/* Lien d'en-tête */
+a#headerlink {
+	display: block;
+	line-height: 60px;
+	padding-left: 20px;
+	font-weight: normal;
+	font-family: "Trebuchet MS", "Century Gothic", Arial, serif;
+}
+
+/** PIED DE PAGE **/ /* Element général */
+#footer {
+	clear: both;
+	margin: 18px 0 0 0;
+	height: 25px;
+}
+
+/* Sous élément, comprenant les informations de copyright et d'exécution de la page */
+#copyright {
+	height: 25px;
+	line-height: 25px;
+	margin: 0;
+	text-align: center;
+}
+
+#copyright a {
+	font-weight: bold;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+	color: rgb(255, 136, 17);
+}
+
+/** BLOC CONTENEUR **/
+.container {
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+	background: rgb(239, 244, 250);
+	border: 1px solid rgb(51, 102, 153);
+}
+
+/** NOTICES ET WARNINGS **/
+.warning {
+	border: 1px solid rgb(30, 30, 30);
+	background: rgb(255, 176, 57);
+	margin: 10px auto 10px auto;
+	padding: 0px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.notice {
+	border: 1px solid rgb(51, 102, 153);
+	background: rgb(239, 244, 250);
+	margin: 10px auto 10px auto;
+	padding: 0px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.warning p,.notice p {
+	padding: 5px;
+	margin: 0px;
+}
+
+/* Pour les formulaires . */
+.form {
+	margin: 0px auto 0px auto;
+	width: 100%;
+}
+
+.f_title {
+	text-align: center;
+	background: rgb(117, 149, 200);
+}
+
+.f_text {
+	width: 50%;
+	text-align: right;
+}
+
+.f_input {
+	width: 50%;
+	text-align: left;
+}
+
+.f_input img {
+	margin-right: 20px;
+}
+
+.confirm {
+	text-align: center;
+	background: rgb(117, 149, 200);
+	padding: 4px;
+	border: 1px solid rgb(239, 244, 250);
+}
+
+/* Affichage des tableaux. */
+.table {
+	width: 100%;
+}
+
+.titlerow {
+	background-color: rgb(109, 132, 148);
+}
+
+tr {
+	background-color: rgb(245, 245, 245);
+}
+
+/* Pour le bbcode. */
+.citation,.citationb {
+	border: 1px solid black;
+	background-color: rgb(255, 203, 151);
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.b {
+	font-weight: bold;
+}
+
+.u {
+	text-decoration: underline;
+}
+
+.i {
+	font-style: italic;
+}
+
+.s {
+	text-decoration: line-through;
+}
+
+/* Divers... */
+blockquote {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+textarea {
+	overflow: auto;
+}

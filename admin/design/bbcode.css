@@ -1,0 +1,90 @@
+/********************* Formatage du BBCode de Connectix Boards *********************/
+
+/* Citations et blocs de code */
+blockquote,.code {
+	margin: 10px 15px;
+}
+
+.citation,.citationb {
+	border: 1px dotted rgb(48, 99, 151);
+	border-left: 4px solid rgb(255, 136, 17);
+	background: rgb(250, 252, 254);
+	padding: 2px;
+}
+
+.code {
+	display: block;
+	border-left: 4px solid rgb(117, 149, 200);
+	background-color: rgb(230, 230, 230);
+	padding: 2px;
+	font-family: courier;
+	overflow: auto;
+}
+
+.code code {
+	margin: 0px;
+	padding: 0px;
+	font-family: courier;
+}
+
+/* Centrer, mettre en gras, souligné, italique ou barré */
+.center {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.b {
+	font-weight: bold;
+}
+
+.u {
+	text-decoration: underline;
+}
+
+.i {
+	font-style: italic;
+}
+
+.s {
+	text-decoration: line-through;
+}
+
+/* Images postées inaccessibles */
+.upi {
+	color: blue;
+}
+
+/* Smiley */
+.smiley {
+	vertical-align: middle;
+}
+
+/* Spoiler */
+.spoil {
+	display: block;
+	border: 1px solid black;
+	padding: 0px;
+	width: 90%;
+	margin: 4px auto;
+}
+
+.spoil_info {
+	display: block;
+	background-color: #666666;
+	color: #FFFFFF;
+	padding: 5px;
+	font-weight: bold;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+	cursor: pointer;
+}
+
+.spoil_spoiler {
+	display: block;
+	padding: 5px;
+}
+
+/* Pas d'affichage */
+.nodisplay {
+	display: none;
+}

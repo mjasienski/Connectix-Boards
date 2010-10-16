@@ -1,0 +1,153 @@
+/**
+* CSS file of Connectix Boards v1.0
+* Zephyr skin
+* kbd_navigation.css
+* 
+* Under GNU-GPL v3 license
+* Author: Jasienski Martin
+*/ 
+
+/* KEYBOARD NAVIGATION */
+
+/* Style for selected elements */
+.navigation_selected, 
+.navigation_selected td.topicstarter,
+.navigation_selected td.topicposts, .navigation_selected td.topicviews,
+tbody .navigation_selected .topicgrouptopics,tbody .navigation_selected .topicgroupposts {
+	background: rgb(200, 220, 230);
+}
+
+/* Style for the navigation menu */
+/* Not displayed in IE6 for compatibility reasons */
+#navmenu_cnt {
+	display:none;
+}
+
+html>body #navmenu_cnt {
+	display:block;
+	position: fixed;
+	top:3px;
+	right:15px;
+	width:140px;
+	text-align:center;
+}
+
+html>body #navmenu_cmd {
+	display:block;
+	float:right;
+	width:115px;
+	color:#444444;
+	font-weight:bold;
+	background:white;
+	border:1px solid rgb(160 160 160);
+	padding: 2px;
+	margin: 2px;
+}
+
+html>body #navmenu {
+	list-style:none;
+}
+
+html>body #navmenu_items {
+	list-style:none;
+	position:fixed;
+	width:32px;
+	height:32px;
+	top:120px;
+	right:57px;
+	background:url(img_navigation/items.png) no-repeat;
+}
+
+html>body #navmenu_pages {
+	list-style:none;
+	position:fixed;
+	width:32px;
+	height:32px;
+	top:260px;
+	right:57px;
+	background:url(img_navigation/page.png) no-repeat;
+}
+
+html>body #nav_forward {
+	position:fixed;
+	width:32px;
+	height:32px;
+	top:120px;
+	right:20px;
+	background:url(img_navigation/right.png);
+}
+
+html>body #nav_back {
+	position:fixed;
+	width:32px;
+	height:32px;
+	top:120px;
+	right:100px;
+	background:url(img_navigation/left.png);
+}
+
+html>body #nav_top {
+	position:fixed;
+	width:32px;
+	height:32px;
+	top:40px;
+	right:60px;
+	background:url(img_navigation/top.png);
+}
+
+html>body #nav_up {
+	position:fixed;
+	width:32px;
+	height:32px;
+	top:80px;
+	right:60px;
+	background:url(img_navigation/up.png);
+}
+
+html>body #nav_down {
+	position:fixed;
+	width:32px;
+	height:32px;
+	top:160px;
+	right:60px;
+	background:url(img_navigation/down.png);
+}
+
+html>body #nav_bottom {
+	position:fixed;
+	width:32px;
+	height:32px;
+	top:200px;
+	right:60px;
+	background:url(img_navigation/bottom.png);
+}
+
+html>body #nav_nextpage {
+	position:fixed;
+	width:32px;
+	height:32px;
+	top:260px;
+	right:20px;
+	background:url(img_navigation/right.png);
+}
+
+html>body #nav_prevpage {
+	position:fixed;
+	width:32px;
+	height:32px;
+	top:260px;
+	right:100px;
+	background:url(img_navigation/left.png);
+}
+
+#nav_forward span, #nav_back span,
+#nav_top span, #nav_up span,
+#nav_down span, #nav_bottom span,
+#nav_nextpage span, #nav_prevpage span {
+	position: absolute;
+	left: 0;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}

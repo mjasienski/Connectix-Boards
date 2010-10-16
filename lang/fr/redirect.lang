@@ -1,0 +1,17 @@
+<?php
+/**
+* errors.lang
+* Lang definition file.
+* Contains the french translation for Connectix Boards.
+* Made by Jasienski Martin
+* ::Connectix Boards 2005::
+*/
+$merge = array(
+	'redirection' => 'Redirection Connectix Boards',
+	'r_message' => 'Message: ',
+	'r_info' => 'Vous allez être redirigé dans {n} secondes.',
+	'r_nowait' => 'Cliquez ici si vous ne souhaitez pas attendre'
+	);
+
+$this->lang = array_merge($this->lang,$merge);
+?>

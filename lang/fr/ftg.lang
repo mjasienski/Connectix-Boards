@@ -1,0 +1,86 @@
+<?php
+/**
+* ftg.lang
+* Lang definition file.
+* Contains the french translation for Connectix Boards.
+* Made by Jasienski Martin
+* ::Connectix Boards 2005::
+*/
+$merge = array (
+	'f_hideorshow' => 'Cacher/Montrer ce forum',
+	
+	'tg_subtg' => 'Sous-groupes de sujets',
+	'tg_title' => 'Titre du groupe de sujets',
+	'tg_topics' => 'Sujets',
+	'tg_posts' => 'Messages',
+	'tg_lastmessage' => 'Dernier message',
+	'tg_nomessposted' => 'Pas encore de messages dans ce groupe de sujets.',
+	'tg_markread_title' => 'Marquer ce groupe de sujet comme lu',
+	'tg_invertselection' => 'Inverser la sélection',
+	'tg_forselection' => 'Pour la sélection',
+	'tg_closetopic' => 'Fermer',
+	'tg_opentopic' => 'Ouvrir',
+	'tg_pintopic' => 'Epingler',
+	'tg_unpintopic' => 'Désépingler',
+	'tg_deletetopic' => 'Supprimer',
+	'tg_deletetopic_confirm' => 'Voulez-vous vraiment supprimer le(s) sujet(s) sélectionné(s)?<br /><br /><b>{topics}</b><br /><a href="{url_yes}">Oui</a> - <a href="{url_no}">Non</a>',
+	'tg_deletetopics_success' => 'Les sujets sélectionnés ont été supprimés avec succès!',
+	'tg_displacetopic' => 'Déplacer vers...',
+	'bb_tg_mod' => 'Modération',
+
+	'tg_noresults' => 'Aucun sujet à afficher.',
+	't_title' => 'Titre du sujet',
+	't_announce' => 'Titre de l\'annonce',
+	't_pinned' => 'Titre du sujet épinglé',
+	't_firstunread_title' => 'Accéder au premier message non-lu de ce sujet',
+	't_starter' => 'Créateur',
+	't_replies' => 'Réponses',
+	't_views' => 'Vues',
+	't_lastmessage' => 'Dernier message',
+	't_lastmessage_title' => 'Accéder directement au dernier message de ce sujet',
+	't_displaced' => 'Déplacé',
+
+	/* Liste de sujets */
+	'topiclist' => 'Afficher les sujets',
+	'tl_poll' => 'Afficher les sondages',
+	'tl_lastmessages' => 'Afficher les derniers sujets du forum',
+	'tl_lastpolls' => 'Afficher les derniers sondages du forum',
+	'tl_unread' => 'comportant des messages non-lus',
+	'tl_posted' => 'où j\'ai participé',
+	'tl_noreply' => 'sans réponse',
+	'tl_bookmark' => 'en favoris',
+	'tl_tracked' => 'suivis par mail',
+	'tl_m_title' => 'Sélectionnez vos critères d\'affichage',
+	'tl_m_unread' => 'Comportant des messages non-lus',
+	'tl_m_posted' => 'Où j\'ai participé',
+	'tl_m_noreply' => 'Sans réponse',
+	'tl_m_bookmark' => 'En favoris',
+	'tl_m_tracked' => 'Suivis par mail',
+	'tl_m_poll' => 'Sondages',
+	
+	/* Boutons */
+	'quickjoin' => 'Aller au premier message non lu',
+	'st_tg_u' => 'Groupe de sujets comportant des messages non lus',
+	'st_tg_r' => 'Groupe de sujets déjà lu',
+	'st_tg_link' => 'Lien',
+	'st_r' => 'Sujet déjà lu',
+	'st_u' => 'Sujet comportant des messages non lus',
+	'st_clsd_r' => 'Sujet fermé et déjà lu',
+	'st_clsd_u' => 'Sujet fermé et comportant des messages non lus',
+	'st_poll_r' => 'Sondage déjà lu',
+	'st_poll_u' => 'Sondage comportant des messages non lus',
+	'st_r_p' => 'Sujet déjà lu, où j\'ai posté',
+	'st_u_p' => 'Sujet comportant des messages non lus, où j\'ai posté',
+	'st_clsd_r_p' => 'Sujet fermé et déjà lu, où j\'ai posté',
+	'st_clsd_u_p' => 'Sujet fermé et comportant des messages non lus, où j\'ai posté',
+	'st_poll_r_p' => 'Sondage déjà lu, où j\'ai posté',
+	'st_poll_u_p' => 'Sondage comportant des messages non lus, où j\'ai posté',
+	'st_disp' => 'Sujet déplacé',
+	'st_pin' => 'Sujet épinglé',
+	'st_ann' => 'Annonce',
+	'st_bookmark' => 'Sujet favori',
+	'st_mail' => 'Sujet suivi par mail'
+	);
+
+$this->lang = array_merge($this->lang,$merge);
+?>

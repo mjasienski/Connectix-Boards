@@ -1,0 +1,147 @@
+/**
+* Formatage du BBCode de Connectix Boards pour Zephyr.
+*/ 
+
+/* Citations et blocs de code */
+blockquote, .code, .phpcode {
+	margin: 10px 15px;
+}
+
+.citation, .citationb {
+	border: 1px solid rgb(200, 215, 230);
+	border-left: 4px solid rgb(255, 136, 17);
+	background: rgb(250, 252, 254);
+	padding: 2px;
+}
+
+.code, .phpcode {
+	display: block;
+	border: 1px solid rgb(190, 200, 215);
+	border-left: 4px solid rgb(117, 149, 200);
+	background-color: rgb(234, 234, 234);
+	padding: 2px;
+	font-family: courier;
+	overflow: auto;
+	max-width: 550px;
+	max-height: 400px;
+}
+
+.code code, .phpcode code {
+	margin: 0px;
+	padding: 0px;
+	font-family: courier;
+}
+
+/* Listes */
+.bbcode_list {
+	margin:2px 0 2px 10px;
+}
+
+/* Centrer, mettre en gras, souligné, italique ou barré */
+.left {
+	display: block;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.right {
+	display: block;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.justified {
+	display: block;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.b {
+	font-weight: bold;
+}
+
+.u {
+	text-decoration: underline;
+}
+
+.i {
+	font-style: italic;
+}
+
+.s {
+	text-decoration: line-through;
+}
+
+/* Images postées inaccessibles */
+.upi {
+	color: blue;
+}
+
+/* Smiley */
+.smiley {
+	vertical-align: middle;
+}
+
+/* Spoiler */
+.spoil {
+	display: block;
+	border: 1px solid black;
+	padding: 0px;
+	width: 90%;
+	margin: 4px auto;
+}
+
+.spoil_info {
+	display: block;
+	background-color: #666666;
+	color: #FFFFFF;
+	padding: 5px;
+	font-weight: bold;
+	font-family: Georgia, Verdana, "Century Gothic", Arial, serif;
+	cursor: pointer;
+}
+
+.spoil_spoiler {
+	display: block;
+	padding: 5px;
+}
+
+/* Pas d'affichage */
+.nodisplay {
+	display: none;
+}
+
+/* Tableaux dans les posts */
+table.tablebbcode {
+	width: 100%;
+	border:1px solid rgb(51,102,153);
+	background-color: #ffffff;
+}
+
+table.tablebbcode caption {
+	margin: 0px;
+	background: none;
+	color: rgb(51,102,153);
+	font-family:Verdana,"Century Gothic",Arial,serif;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-align: center;
+}
+
+table.tablebbcode th {
+	text-align: center;
+	font-weight: bold;
+	border:1px solid rgb(51,102,153);
+}
+
+table.tablebbcode td {
+	padding: 2px;
+	text-indent: 2px;
+	border:1px solid rgb(51,102,153);
+}

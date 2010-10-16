@@ -1,0 +1,60 @@
+<?php
+/**
+* search.lang
+* Lang definition file.
+* Contains the french translation for Connectix Boards.
+* Made by Jasienski Martin
+* ::Connectix Boards 2005::
+*/
+$merge = array (
+	'src_entercrits' => 'Veuillez spécifier vos critères de recherche',
+	'src_sortcrits' => 'Critères de classement des résultats',
+	'src_limitcrits' => 'Limiter la portée de la recherche',
+	'src_keyscrits' => 'Critères de recherche',
+	'src_where' => 'Où voulez-vous chercher?',
+	'src_where_includesub' => 'Rechercher également dans les sous-groupes de sujets',
+	'src_def' => 'Dans tout le forum',
+	'src_from' => 'Limiter la recherche chronologiquement',
+	'src_from_oneday' => 'Limiter à un jour',
+	'src_from_twodays' => 'Limiter à deux jours',
+	'src_from_oneweek' => 'Limiter à une semaine',
+	'src_from_twoweeks' => 'Limiter à deux semaines',
+	'src_from_onemonth' => 'Limiter à un mois',
+	'src_from_oneyear' => 'Limiter à un an',
+	'src_from_all' => 'Aucune limite de temps',
+	'src_read' => 'Chercher uniquement dans les messages non-lus',
+	'src_sort' => 'Trier par',
+	'src_sort_time' => 'Heure du message',
+	'src_sort_title' => 'Titre du sujet',
+	'src_sort_author' => 'Auteur du message',
+	'src_sort_tg' => 'Titre du groupe de sujets',
+	'src_sort_desc' => 'Ordre décroissant',
+	'src_sort_asc' => 'Ordre croissant',
+	'src_keys' => 'Mots clés',
+	'src_keys_joker' => 'utilisez le % pour remplacer n\'importe quelle lettre ou groupe de lettres',
+	'src_position_form' => 'Sélectionner l\'endroit de la recherche',
+	'src_position_in' => 'Rechercher dans',
+	'src_titles' => 'les titres des sujets',
+	'src_msgs' => 'les messages',
+	'src_display_form' => 'Sélectionner la méthode d\'affichage des résultats',
+	'src_display_by' => 'Afficher sous forme de',
+	'src_display_topics' => 'liste de sujets',
+	'src_display_msgs' => 'messages',
+	'src_author_form' => 'Recherche par auteur',
+	'src_author_form_exact' => 'nom exact, si précisé',
+	'src_author' => 'Auteur',
+	'src_submit_confirm' => 'Lancer la recherche !',
+	'src_submit' => 'Confirmer',
+	'src_results' => 'Résultats de la recherche',
+	'src_infos' => 'Informations sur le message',
+	'src_notabene' => '3 caractères minimum',
+	'src_noresult' => 'Aucun résultat n\'a été trouvé pour vos critères de recherche.',
+	'src_nbresults' => '{n} résultats pour votre recherche',
+	'src_results_notice' => 'Votre recherche a été exécutée avec succès, et a donné {n} résultats correspondant à vos critères. Ils sont affichés ci-dessous. Le formulaire de recherche est disponible en dessous de ceux-ci, si vous voulez affiner votre recherche.',
+	'src_form' => 'Formulaire de recherche',
+	'src_novalidcrits' => 'Vos critères de recherche sont invalides.',
+	'src_novalidusername' => 'L\'utilisateur que vous recherchez n\'existe pas.'
+	);
+
+$this->lang = array_merge($this->lang,$merge);
+?>

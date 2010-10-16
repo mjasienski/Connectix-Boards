@@ -1,0 +1,240 @@
+****	Général	****
+
+! Passage à UTF-8
+ ! Fonctions de gestion de chaines de caractères
+ ! Vérifications au niveau javascript
+- Migration de 0.8.4 vers UTF-8
+! NULL et NOT NULL problème install avec Mysql 5 (t1986)
+! Ajouter robots.txt (rewrite ou non) (t1596)
+ ! y mettre les liens directs vers les messages (sinon doublon)
+! erreur de permission, pas le bon numéro de version affiché?
+# Insérer l'anglais dans la version de base
+# Catégories associées à des langues
+ # Les membres choisissent d'afficher ce qu'ils veulent en fonction de leurs préférences linguistiques
+
+****	BBcode et traitement messages	****
+
+! Balise flash et vidéos qui marchent pas?
+! Edition de la balise youtube?
+! Dailymotion
+! bug spoiler et php
+- Couper les url trop longues (liens automatiques ou manuels)
+! BBcode tableaux (espaces fantomes?) (t1797)
+! Prédominance du style général des liens si mise en forme en dehors de la balise URL (t1821) (c'est normal en fait)
+! Lignes fantomes dans des messages: code (interlignes parfois doublés - linux? ; espace au dessus du code)
+! Balise PHP configurable par CSS et valide XHTML
+# Config des liens auto plus aisée
+# Redimension des images trop grandes paramétrable
+? BBcodes additionnels et éventuels:
+ ? Codes sources colorisés (geshi?)
+ ? Equations (phpmathpublisher?)
+? Mettre en cache les bbcodes
+? Module de gestion via le site officiel, comme les smileys
+? @ dans adresses mail en image
+? Hauteur et largeur max à la balise code
+? Balises de langue dans des messages
+ ? ex: spoiler = texte caché
+(-) /!\ Edition /!\
+(-) Edition de la balise list si pas de [*]
+
+
+****	Administration	****
+
+! Afficher/Cacher les modos d'un groupe dans les droits modos
+! Modifier le notice lors d'un changement de groupe
+! Fuseau horaire du forum (invité)
+ - Config à l'install du fuseau horaire (date('Z',3600))
+! Possibilité de supprimer les traceurs
+! Possibilité de vider les logs
+! Ergonomie des droits utilisateurs à revoir!
+ ! droits des groupes configurables aussi dans les création/édition des groupes
+- Valider inscriptions au cas par cas
+- droits d'édition
+- Dans les droits, permettre ou non les sondages pour un TG
+# Droits des utilisateurs dans les groupes:
+ # Voir le groupe de sujets, mais pas son contenu
+ # groupe de sujet dans lequel on ne peut lire que les sujets qu'on a initié (droit spécial)
+# connexion au paneladmin -> prendre toute la place (virer l'espace menu)
+? Menu forum customisable (ordre?)
+? Liste de membres plus poussée: se servir de la liste du forum (t1662)
+? Image avec TG
+? Possibilité de cron pour sauvegarde
+? Balises html pour les règles
+? Linker les règles vers page web externe
+? Délester les membres inactifs (t2049)
+
+
+****	Modération	****
+
+- Gérer la suppression de sujets par groupes et non globalement (PA)
+! Splitter un sujet
+ ! Créer un nouveau sujet à partir d'un ou plusieurs messages
+ ! Fusion de sujets
+- Avertissements (t1630)
+! Bannissement à vie (mettre à 0)
+? Transformer sujet en sondage
+  ? Il suffit de créer un sondage et de transférer les message dedans... Pas besoin.
+? Modifs topics t1255#4
+? Fermer un sondage
+? Droits modos plus avancés (chaque option...)
+? Corbeille
+? Afficher modos sur liste de tg (désactivable via PA)
+
+
+****	Utilisation	****
+
+! Infobulles sur les boutons de bbcode
+! Edition rapide si javascript activé (AJAX)
+ ! Directement dans les sujets
+ ! Prévisualisation dans formulaire classique
+! Afficher/Cacher le menu d'aide à la rédaction
+! Aide javascript pour le bbcode liste
+! Lors de l'insertion d'un lien, ajouter un 'Titre du lien' présélectionné au bon endroit
+! Navigation au clavier dans le forum
+ ! Surlignage de l'entrée courante
+ ! Menu de navigation cliquable présent dans le coin supérieur droit
+! Si moins de 3h, mettre 'il y a XX minutes'
+! Fuseaux horaires et invités
+! Images pour le menu des bbcodes (t1535)
+! Fuseaux horaires et 'Ajd', 'Hier' (t1739 - t2056)
+! si pas de forum à afficher, bug en anglais - t1952
+! Modifier le nom des liens de filtrage des derniers messages: "nouvelles réponses à vos posts" par exemple
+# Upload de fichiers ( /!\ sécurité )
+! Plus de petites actions gérées par AJAX, avec petit prompt informatif (t1833)
+# Dans le formulaire, la touche 'escape' annule
+- Fichiers de langue pour l'installation
+- Traduire commentaires
+# valider un topic
+# faire un 'Afficher la liste des smilies (t1860)
+# choisir ordre affichage sujets
+- s'abonner à un forum, un tg ou à tout le forum
+- Pouvoir signaler un MP aux modos
+? ajouter un 'message résolu'
+? Message 'Edité avec succès' (édit rapide ou normal) (prompt)
+? Editer mp si non lu par le destinataire... ?
+? accesskey sur liens importants
+? lien 'accéder au contenu'
+? Augmenter/Diminuer la taille du textarea
+? Amélioration de la prévisualisation (AJAX) par fenêtre css si javascript activé
+? Sous-menus en onglets
+? WYSIWYG (TinyMCE?)
+? Smileys en pop-up
+? Recherche dynamique des mots du titre d'un sujet, à l'écriture (AJAX)
+? Multiquote
+? Formulaire de contact vers les admins
+? Améliorer les hideAndShow (flèches vers haut et bas)
+? Mettre des topics en 'résolu', avec config via PA pour dire quels tg sont affectés
+? MP automatiques pour certaines actions
+? Auto-complétion des pseudos dans les MP (cache)
+
+
+****	Statistiques	****
+
+# t1678
+? Connectés dans la journée
+? Record de connectés
+? Robots dans les connectés
+
+
+****	Membres	****
+
+! Fonction qui renvoie l'age du membre
+! Mise en place de rangs, en plus des groupes (plus facile pour la gestion des droits)
+# Choisir les champs membres à afficher à coté des messages
+# Autoriser ou non l'édition pour certains groupes
+- Langue à l'inscription (si plus d'une)
+- Avatars PNG perdent transparence?
+- Avatar par défaut
+# Revoir la sécurité des mots de passe (t1884)
+- Changer mail ou recover mdp avec mail -> foire
+# check sur l'age à l'inscription
+? Ajout de champs via le paneladmin
+ ? Considérer certains champs de la version de base comme des champs ajoutés via ce biais
+ ? Possibilité de gérer ces champs en multilangue
+ ? Les seuls champs vraiment indispensables au bon fonctionnement du forum sont conservés dans la table users
+? Jabber dans profil
+? OpenID
+? Carnet d'adresses pour les MP
+? Envoyer MP à plusieurs utilisateurs
+? MP sous forme de discussion?
+? MP à l'inscription
+? Bloquer MP à double sens:
+ - Bloquer tous les MP d'un user (genre de lecture seule...)
+ - Bloquer un user en réception
+? Appartenir à plusieurs groupes
+? Trier les membres par lastconnect
+? Importer/Exporter profil
+
+
+****	Accessibilité - Référencement	****
+
+- Ajouter des keywords et description en meta (t1652)
+ - Statiques + dynamiques
+! Spécifier que le captcha est case sensitive
+! Proposer de recharger le captcha (AJAX)
+! Si invité, menu de changement de langue et cookie
+? Légende des icones
+
+
+****	Design	****
+
+! Utilisation de plus d'icones
+! <br /> de trop entre pagination et liens 'suivre ce sujet', ... (fix dans t2058)
+! Messages qui déforment les tableaux
+- Refaire complètement la skin
+ # Liste de messages en div et non en table
+ - Formulaires pas très jolis
+ ! Fieldset de la liste des membres sous Safari
+ - Légende des groupes améliorable
+ - Menus des smileys personnalisable en css ou nb de sm par ligne configurable, ordre
+- Galerie d'avatars
+ ! Design de la présentation
+ - Créer une galerie de base
+! Menu de navigation pseudo-automatique
+- Affichage des connectés plus clair
+! Bug PA sous FF3?
+- images dans les messages: mieux gérer si trop grandes
+! id pour le fieldset de prévisualisation
+! Champs de formulaires: spécifier police et autres... t2051
+- Faire une page 'crédits' avec lien vers FamFamFam.com pour les icones du skin Zephyr.
+? Css pour portable et impression
+? menu déroulant css: http://www.siteduzero.com/tutoriel-3-37795-creer-un-menu-horizontal-deroulant-en-css.html
+? Design administration paramétrable?
+? Tpl différents en fonction des tg
+
+ 
+****	Technique	****
+
+! Gestion de la langue dans le javascript
+! Eviter que des templates soient parsés avant le traitement complet de la page
+! Gérer tous les prompt javascripts en 'home-made'
+! Empêcher le brute-force à l'inscription
+! Id du textarea en paramètre
+! Eternel bug avec getUnreadTgs
+! Lien dans le mail des MP erroné
+! GetUserLink possible avec urls absolues
+- Enregistrer IP avec envoi MP
+- Après installation, les règles s'affichent en HTML ?
+# Trier fichiers de langue
+# Optimiser un poil les sauvegardes
+# Support ipv6 - principalement pour le ban
+! Chmod avatars et smileys parfois foireux (-> 755)
+! Chmod install (-> 755)
+- Problèmes de RSS sans url rewrite?
+- Migrations:
+ - phpbb2 foire depuis la 0.8.2?
+ - punbb et les hash?
+ - phpbb3
+ - smf
+! SSL et post de sujets: https -> http
+! Faute ortho dans message pré-enregistré (t1834)
+ ? Sauver ces msg en fct de la langue
+? Sécurité avancée (t1889)
+? 'Inclure' le forum
+ ? Gestion des url de manière globale, avec module interne de réécriture
+? Gestionnaires d'affichage par itérateurs, avec plein d'options
+? Lors de la màj des stats : màj des messages des membres
+? Extensions ne touchant pas au code (punbb 1.3 ou dotclear 2)
+? Renommer les fonctions avec un préfixe 'cb_'
+? Cache sql plus poussé
+? Exporter/Importer design (zip)

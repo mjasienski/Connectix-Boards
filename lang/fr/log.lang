@@ -1,0 +1,32 @@
+<?php
+/**
+* log.lang
+* Lang definition file.
+* Contains the french translation for Connectix Boards.
+* Made by Jasienski Martin
+* ::Connectix Boards 2005::
+*/
+$merge = array (
+	'log_choosetype' => 'Choisissez un type de report...',
+	'log_readonly' => 'Punition d\'un membre : mise en lecture seule.',
+	'log_ban' => 'Punition d\'un membre : bannissement.',
+	'log_cancelpunish' => 'Annulation de la punition d\'un membre.',
+	'log_deletemess' => 'Suppression d\'un message.',
+	'log_deletetopic' => 'Suppression d\'un sujet.',
+	'log_closetopic' => 'Fermeture d\'un sujet.',
+	'log_opentopic' => 'Réouverture d\'un sujet.',
+	'log_pintopic' => 'Epinglage d\'un sujet.',
+	'log_unpintopic' => 'Désépinglage d\'un sujet.',
+	'log_unannouncetopic' => 'Retour d\'une annonce à un sujet normal.',
+	'log_displacetopic' => 'Déplacement d\'un topic.',
+	'log_managereport' => 'Gestion d\'un message signalé.',
+	'log_changetopictitle' => 'Changement du titre d\'un sujet.',
+	'log_editprofile_general' => 'Modification des données personnelles',
+	'log_editprofile_avatar' => 'Modification de l\'avatar',
+	'log_editprofile_signature' => 'Modification de la signature',
+	'log_addnote' => 'Ajout d\'une note sur un membre.',
+	'log_reputation' => 'Modification de la réputation d\'un membre.'
+	);
+
+$this->lang = array_merge($this->lang,$merge);
+?>
